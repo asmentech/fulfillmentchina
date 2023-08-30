@@ -1,0 +1,66 @@
+import { createRouter, createWebHistory } from 'vue-router'
+
+const router = createRouter({
+  history: createWebHistory(import.meta.env.BASE_URL),
+  routes: [
+    {
+      path: "/",
+      name: "Layout",
+      component: () => import("../components/Layout.vue"),
+      meta: { title: 'Fulfillment China' },
+      redirect: '/login',
+      children: [
+        {
+          path: '/dashboard',
+          name: "dashboard",
+          component: () => import("../views/Dashboard/index.vue"),
+          meta: { title: 'dashboard' }
+        },
+        {
+          path: '/warehouse',
+          name: "warehouse",
+          component: () => import("../views/Warehouse/index.vue"),
+          meta: { title: 'warehouse' }
+        },
+        {
+          path: '/products',
+          name: "products",
+          component: () => import("../views/Products/index.vue"),
+          meta: { title: 'products' }
+        },
+        {
+          path: '/inventory',
+          name: "inventory",
+          component: () => import("../views/Inventory/index.vue"),
+          meta: { title: 'inventory' }
+        },
+        {
+          path: '/billing',
+          name: "billing",
+          component: () => import("../views/Billing/index.vue"),
+          meta: { title: 'billing' }
+        },
+        {
+          path: '/profile',
+          name: "profile",
+          component: () => import("../views/Profile/index.vue"),
+          meta: { title: 'profile' }
+        },
+        {
+          path: '/support',
+          name: "support",
+          component: () => import("../views/Support/index.vue"),
+          meta: { title: 'support' }
+        },
+      ]
+    },
+    {
+      path: '/login',
+      name: "login",
+      component: () => import("../views/Login/index.vue"),
+      meta: { title: 'login' }
+    }
+  ]
+})
+
+export default router
