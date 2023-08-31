@@ -2,7 +2,7 @@
     <div class="layout">
         <el-container>
             <el-aside width="256px" class="aside">
-                <el-image style="margin: 64px 0 50px 0" src="/src/assets/logo.svg"></el-image>
+                <el-image style="margin: 64px 0 50px 33%" src="/src/assets/logo.svg"></el-image>
                 <el-menu default-active="dashboard" @select="handleClick" background-color="#091242" text-color="#fff" active-text-color="#FFBE34">
                     <el-menu-item v-for="(item) in menu" :key="item.key" :index="item.key">
                         <el-icon>
@@ -13,15 +13,23 @@
                     </el-menu-item>
                 </el-menu>
             </el-aside>
-            <el-main>
-                <router-view></router-view>
-            </el-main>
+            <el-container class="container">
+                <el-header class="header">header</el-header>
+                <el-main>
+                    <router-view></router-view>
+                </el-main>
+            </el-container>
         </el-container>
     </div>
 </template>
 
 <script setup>
 import { ref } from "vue";
+import { useRouter } from 'vue-router'
+import { useStore } from "vuex";
+
+const router = useRouter()
+const store = useStore();
 
 const menu = ref([
     {key: 'dashboard',title: 'Dashboard'},
@@ -36,6 +44,8 @@ const menu = ref([
 const selectedKey = ref('dashboard')
 const handleClick = function(index) {
     selectedKey.value = index;
+    store.commit('setTagActive', index);
+    router.push(`/${index}`)
 }
 </script>
 
@@ -48,6 +58,13 @@ const handleClick = function(index) {
     font-size: 16px;
     font-weight: 500;
 }
+.container {
+    width: 100%;
+    .header {
+        padding: 36px 0 36px 21px;
+    }
+}
+
 .svg-selected {
     overflow: hidden; // 超出部分隐藏
     filter: drop-shadow(#FFBE34 100px 0);

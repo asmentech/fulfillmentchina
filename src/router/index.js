@@ -23,6 +23,12 @@ const router = createRouter({
           meta: { title: 'warehouse' }
         },
         {
+          path: '/shiptofba',
+          name: "shiptofba",
+          component: () => import("../views/Shiptofba/index.vue"),
+          meta: { title: 'shiptofba' }
+        },
+        {
           path: '/products',
           name: "products",
           component: () => import("../views/Products/index.vue"),
