@@ -58,6 +58,12 @@ const router = createRouter({
           component: () => import("../views/Support/index.vue"),
           meta: { title: 'support' }
         },
+        {
+          path: '/newShipment',
+          name: "newShipment",
+          component: () => import("../views/Dashboard/newShipment.vue"),
+          meta: { title: 'newShipment' }
+        },
       ]
     },
     {

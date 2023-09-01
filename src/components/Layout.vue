@@ -14,8 +14,11 @@
                 </el-menu>
             </el-aside>
             <el-container class="container">
-                <el-header class="header">header</el-header>
-                <el-main>
+                <el-header class="header">
+                    <div>1111</div>
+                    <div>2222</div>
+                </el-header>
+                <el-main class="main">
                     <router-view></router-view>
                 </el-main>
             </el-container>
@@ -61,7 +64,12 @@ const handleClick = function(index) {
 .container {
     width: 100%;
     .header {
-        padding: 36px 0 36px 21px;
+        padding: 36px 12% 0 12%;
+        display: flex;
+        justify-content: flex-end;
+    };
+    .main {
+        padding: 24px 12% 24px 8%;
     }
 }
 
