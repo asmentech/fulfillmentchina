@@ -21,6 +21,8 @@ body {
   /* place-items: center; */
   min-width: 320px;
   min-height: 100vh;
+  /* 取消连写 */
+  font-variant-ligatures: none; 
 }
 
 #app {
@@ -34,6 +36,11 @@ body {
   border-right-style: none;
   display: flex !important;
   padding: 0 20% 0 20% !important;
+}
+.plain-btn {
+  --el-button-hover-text-color: '' !important;
+  --el-button-hover-bg-color: '' !important;
+  --el-button-hover-border-color: #8d8c8c !important;
 }
 
 @media (prefers-color-scheme: light) {

@@ -46,6 +46,20 @@
             <el-col :span="1"></el-col>
             <el-col :span="7" class="bottom-table" style="padding: 20px 27px">
                 <div style="font-size: 24px;font-weight: 600">Live Tracking</div>
+                <el-divider style="margin-top: 16px"></el-divider>
+                <div style="display: flex;justify-content: space-between">
+                    <div>
+                        <div style="font-size: 12px">Tracking Number</div>
+                        <div style="font-size: 12px;color: #A3A3A3">#123456789</div>
+                    </div>
+                    <div>
+                        <el-button class="plain-btn" style="margin-right: 15px" icon="ArrowLeft" circle></el-button>
+                        <el-button class="plain-btn" icon="ArrowRight" circle></el-button>
+                    </div>
+                </div>
+                <div>
+
+                </div>
             </el-col>
         </div>
     </div>
@@ -87,11 +101,5 @@ const createNew = function() {
         box-shadow: 0px 0px 10px -3px rgba(0, 0, 0, 0.25);
         padding: 10px;
     }
-}
-
-.plain-btn {
-    --el-button-hover-text-color: '';
-    --el-button-hover-bg-color: '';
-    --el-button-hover-border-color: '';
 }
 </style>

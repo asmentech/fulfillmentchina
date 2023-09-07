@@ -1,5 +1,6 @@
 <template>
     <div class="container">
+        <el-button color="#FFBE34" icon="Back" size="small" style="width: 80px" @click="goBack">Back</el-button>
         <div class="top">Create New Shipment</div>
         <div class="bottom">
             <el-col :span="16" class="left-form">
@@ -49,9 +50,14 @@
 
 <script setup>
 import { ref } from "vue";
+import { useRouter } from 'vue-router'
 
+const router = useRouter()
 const activeTab = ref('sender');
 const isSave = ref(false);
+const goBack = () => {
+    router.go(-1);
+}
 </script>
 
 <style lang="less" scoped>

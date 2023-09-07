@@ -15,8 +15,19 @@
             </el-aside>
             <el-container class="container">
                 <el-header class="header">
-                    <div>1111</div>
-                    <div>2222</div>
+                    <el-image src="../src/assets/ringbell.svg" style="margin-right: 20px"></el-image>
+                    <el-avatar :size="45" style="margin-right: 20px"></el-avatar>
+                    <div>Mary</div>
+                    <el-dropdown style="margin-left: 80px">
+                        <el-icon>
+                            <arrow-down />
+                        </el-icon>
+                        <template #dropdown>
+                            <el-dropdown-menu>
+                                <el-dropdown-item @click="logout">Log Out</el-dropdown-item>
+                            </el-dropdown-menu>
+                        </template>
+                    </el-dropdown>
                 </el-header>
                 <el-main class="main">
                     <router-view></router-view>
@@ -50,6 +61,9 @@ const handleClick = function(index) {
     store.commit('setTagActive', index);
     router.push(`/${index}`)
 }
+const logout = function() {
+    router.push('/login')
+}
 </script>
 
 
@@ -64,12 +78,13 @@ const handleClick = function(index) {
 .container {
     width: 100%;
     .header {
-        padding: 36px 12% 0 12%;
+        padding: 36px 12% 0 10%;
         display: flex;
         justify-content: flex-end;
+        align-items: center
     };
     .main {
-        padding: 24px 12% 24px 8%;
+        padding: 24px 7% 24px 7%;
     }
 }
 
