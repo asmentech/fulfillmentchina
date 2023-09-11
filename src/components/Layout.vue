@@ -41,6 +41,7 @@
 import { ref } from "vue";
 import { useRouter } from 'vue-router'
 import { useStore } from "vuex";
+import { ElMessageBox } from 'element-plus'
 
 const router = useRouter()
 const store = useStore();
@@ -62,8 +63,12 @@ const handleClick = function(index) {
     router.push(`/${index}`)
 }
 const logout = function() {
-    router.push('/login')
+    ElMessageBox.confirm('Are you sure to log out?').then(() => {
+        router.push('/login')
+    }).catch(() => {})
 }
+
+
 </script>
 
 

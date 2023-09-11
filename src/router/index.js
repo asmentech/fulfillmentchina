@@ -64,6 +64,24 @@ const router = createRouter({
           component: () => import("../views/Dashboard/newShipment.vue"),
           meta: { title: 'newShipment' }
         },
+        {
+          path: '/newProduct',
+          name: "newProduct",
+          component: () => import("../views/Dashboard/newProduct.vue"),
+          meta: { title: 'newProduct' }
+        },
+        {
+          path: '/productDetails',
+          name: "productDetails",
+          component: () => import("../views/Products/details.vue"),
+          meta: { title: 'productDetails' }
+        },
+        {
+          path: '/fcorder',
+          name: "fcorder",
+          component: () => import("../views/Warehouse/newFcorder.vue"),
+          meta: { title: 'fcorder' }
+        },
       ]
     },
     {

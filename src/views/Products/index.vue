@@ -2,17 +2,25 @@
     <div class="container">
         <div class="top">
             <span>Products</span>
-            <el-button icon="CirclePlus" style="width: 192px" color="#FFBE34">Add new products</el-button>
+            <el-button icon="CirclePlus" style="width: 192px" color="#FFBE34" @click="addProducts">Add new products</el-button>
         </div>
         <el-divider style="margin-top: 15px"></el-divider>
         <div class="bottom">
-            <el-table></el-table>
+            <el-table @click="toDetail"></el-table>
         </div>
     </div>
 </template>
 
 <script setup>
+import { useRouter } from 'vue-router'
 
+const router = useRouter()
+const addProducts = function() {
+    router.push('/newProduct')
+}
+const toDetail = function() {
+    router.push('/productDetails')
+}
 </script>
 
 <style lang="less" scoped>

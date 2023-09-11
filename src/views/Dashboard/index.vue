@@ -7,7 +7,7 @@
             </div>
             <div>
                 <el-date-picker placeholder="Select" style="margin-right: 42px"></el-date-picker>
-                <el-button icon="FolderAdd" class="plain-btn" style="margin-right: 42px;">Create New Product</el-button>
+                <el-button icon="FolderAdd" class="plain-btn" style="margin-right: 42px;" @click="addNew">Create New Product</el-button>
                 <el-button icon="Ship" color="#FFBE34" @click="createNew">Create New Shipment</el-button>
             </div>
         </div>
@@ -71,6 +71,9 @@ import { useRouter } from 'vue-router'
 const router = useRouter()
 const createNew = function() {
     router.push('/newShipment')
+}
+const addNew = function() {
+    router.push('/newProduct')
 }
 </script>
 

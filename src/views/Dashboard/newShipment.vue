@@ -4,40 +4,60 @@
         <div class="top">Create New Shipment</div>
         <div class="bottom">
             <el-col :span="16" class="left-form">
+                <el-scrollbar height="560px">
                 <div style="font-size: 24px;font-weight: 600">Shipment Item</div>
                 <el-divider style="margin-bottom: 0px"></el-divider>
-                <el-tabs v-model="activeTab" stretch>
-                    <el-tab-pane label="Sender Info." name="sender">
-                        <div style="font-size: 16px;font-weight: 500;margin-top: 10px">Saved Sender</div>
-                        <div style="font-size: 16px;font-weight: 500;margin-top: 10px">Add a new sender</div>
-                        <el-form label-position="top" style="margin-top: 20px">
-                            <el-row>
-                                <el-col :span="10">
-                                    <el-form-item label="Name">
-                                        <el-input></el-input>
-                                    </el-form-item>
-                                </el-col>
-                                <el-col :span="4"></el-col>
-                                <el-col :span="10">
-                                    <el-form-item label="FBA Address">
-                                        <el-input></el-input>
-                                    </el-form-item>
-                                </el-col>
-                            </el-row>
-                        </el-form>
-                        <div class="form-bottom">
-                            <el-checkbox v-model="isSave" label="Save this contact info"></el-checkbox>
-                            <div>
-                                <el-button link type="danger" icon="Delete">clear form</el-button>
-                                <el-button color="#F2F2F2" style="width: 90px;font-weight: 500">Next</el-button>
-                            </div>
-                        </div>
-                    </el-tab-pane>
-                    <el-tab-pane label="Customer Info." name="customer"></el-tab-pane>
-                    <el-tab-pane label="Item" name="item"></el-tab-pane>
-                    <el-tab-pane label="Shipment Details" name="detail"></el-tab-pane>
-                    <el-tab-pane label="Shipping Method" name="method"></el-tab-pane>
-                </el-tabs>
+                <el-form label-position="top" style="margin-top: 20px">
+                    <div style="font-size: 16px;font-weight: 500;margin-top: 10px">Saved Sender</div>
+                        <el-row style="margin-top: 24px">
+                            <el-col :span="10">
+                                <el-form-item>
+                                    <el-select style="width: 362px" placeholder="select a sender"></el-select>
+                                </el-form-item>
+                            </el-col>
+                            <el-col :span="4"></el-col>
+                            <el-col :span="10">
+                                <el-form-item>
+                                    <el-button color="#F2F2F2" style="width: 362px" icon="Plus">Add a new sender</el-button>
+                                </el-form-item>
+                            </el-col>
+                        </el-row>
+                    <div style="font-size: 16px;font-weight: 500;margin-top: 24px">Add a new sender</div>
+                        <el-row style="margin-top: 24px">
+                            <el-col :span="10">
+                                <el-form-item label="Name">
+                                    <el-input></el-input>
+                                </el-form-item>
+                            </el-col>
+                            <el-col :span="4"></el-col>
+                            <el-col :span="10">
+                                <el-form-item label="FBA Address">
+                                    <el-select style="width: 362px"></el-select>
+                                </el-form-item>
+                            </el-col>
+                        </el-row>
+                        <el-row style="margin-top: 24px">
+                            <el-col :span="10">
+                                <el-form-item label="Company Name">
+                                    <el-input></el-input>
+                                </el-form-item>
+                            </el-col>
+                            <el-col :span="4"></el-col>
+                            <el-col :span="10">
+                                <el-form-item label="Email">
+                                    <el-input></el-input>
+                                </el-form-item>
+                            </el-col>
+                        </el-row>
+                </el-form>
+                <div class="form-bottom">
+                    <el-checkbox v-model="isSave" label="Save this contact info"></el-checkbox>
+                    <div>
+                        <el-button link type="danger" icon="Delete">clear form</el-button>
+                        <el-button color="#F2F2F2" style="width: 90px;font-weight: 500">Next</el-button>
+                    </div>
+                </div>
+                </el-scrollbar>
             </el-col>
             <el-col :span="1"></el-col>
             <el-col :span="7" class="left-form">
@@ -69,10 +89,11 @@ const goBack = () => {
     font-size: 36px;
     font-weight: 600;
     align-items: center;
+    margin-top: 20px;
 }
 .bottom {
     display: flex;
-    margin-top: 48px;
+    margin-top: 30px;
     .left-form {
         border-radius: 15px;
         background: var(--white-100, #FFF);

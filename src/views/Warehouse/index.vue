@@ -12,7 +12,7 @@
                 <el-button icon="Filter" class="plain-btn" style="margin-left: 32px">Filters</el-button>
             </div>
             <div>
-                <el-button icon="Ship" style="width: 192px" color="#FFBE34">Ship to FC</el-button>
+                <el-button @click="toFcorder" icon="Ship" style="width: 192px" color="#FFBE34">Ship to FC</el-button>
             </div>
         </div>
         <div class="bottom">
@@ -22,7 +22,13 @@
 </template>
 
 <script setup>
+import { useRouter } from 'vue-router'
 
+const router = useRouter()
+
+const toFcorder = function() {
+    router.push('/fcorder')
+}
 </script>
 
 <style lang="less" scoped>
