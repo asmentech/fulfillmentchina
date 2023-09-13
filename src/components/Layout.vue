@@ -48,10 +48,10 @@ const store = useStore();
 
 const menu = ref([
     {key: 'dashboard',title: 'Dashboard'},
-    {key: 'warehouse',title: 'Warehouse In'},
+    // {key: 'warehouse',title: 'Warehouse In'},
     {key: 'shiptofba',title: 'Ship to FBA'},
     {key: 'products',title: 'Products'},
-    {key: 'inventory',title: 'Inventory'},
+    {key: 'inventory',title: 'Storage'},
     {key: 'billing',title: 'Billing'},
     {key: 'profile',title: 'Profile'},
     {key: 'support',title: 'Support'},

@@ -1,47 +1,69 @@
 <template>
     <div class="container">
         <el-button color="#FFBE34" icon="Back" size="small" style="width: 80px" @click="goBack">Back</el-button>
-        <div class="top">Add New Product</div>
+        <div class="top">Create New Storage</div>
         <div class="bottom">
             <el-col :span="16" class="left-form">
                 <el-scrollbar height="560px">
-                <div style="font-size: 24px;font-weight: 600">Product</div>
+                <div style="font-size: 24px;font-weight: 600">Storage Item</div>
                 <el-divider style="margin-bottom: 0px"></el-divider>
                     <el-form label-position="top" style="margin-top: 20px">
-                        <div style="font-size: 16px;font-weight: 500;margin: 10px 0">Basic information</div>
+                        <div style="font-size: 16px;font-weight: 500;margin: 10px 0">Product</div>
+                        <el-row style="margin-top: 24px">
+                            <el-col :span="9">
+                                <el-form-item>
+                                    <el-select style="width: 362px" placeholder="select a product"></el-select>
+                                </el-form-item>
+                            </el-col>
+                            <el-col :span="4"></el-col>
+                            <el-col :span="9">
+                                <el-form-item>
+                                    <el-button color="#F2F2F2" style="width: 362px" icon="Plus">Add a new product</el-button>
+                                </el-form-item>
+                            </el-col>
+                        </el-row>
+                        <div style="font-size: 16px;font-weight: 500;margin: 10px 0">Product Infomation</div>
+                        <el-row>
+                            <el-col :span="9">
+                                <el-form-item label="Num">
+                                    <el-input><template #append>cartons</template></el-input>
+                                </el-form-item>
+                            </el-col>
+                            <el-col :span="4"></el-col>
+                            <el-col :span="5">
+                                <el-form-item label="Estimated total volume">
+                                    <div class="est-total">
+                                        500 <span style="color: #3A3A3A">CBM</span>
+                                    </div>
+                                </el-form-item>
+                            </el-col>
+                            <el-col :span="5">
+                                <el-form-item label="Estimated total weight">
+                                    <div class="est-total">
+                                        500 <span style="color: #3A3A3A">kg</span>
+                                    </div>
+                                </el-form-item>
+                            </el-col>
+                        </el-row>
+                        <div style="font-size: 16px;font-weight: 500;margin: 10px 0">Warehousing Options</div>
                             <el-row>
-                                <el-col :span="10">
-                                    <el-form-item label="Product Name">
+                                <el-col :span="9">
+                                    <el-form-item label="Warehouse">
                                         <el-input placeholder="enter here"></el-input>
                                     </el-form-item>
                                 </el-col>
                                 <el-col :span="4"></el-col>
-                                <el-col :span="7">
-                                    <el-form-item label="Product Pictures"></el-form-item>
+                                <el-col :span="9">
+                                    <el-form-item label="Estimated storage time">
+                                        <div style="display: flex">
+                                            <el-select placeholder="select here"></el-select>
+                                            <el-select style="width: 96px;margin-left: 16px"></el-select>
+                                        </div>
+                                    </el-form-item>
                                 </el-col>
                             </el-row>
-                            <el-col :span="7">
-                                <el-form-item label="Package Information">
-                                    <el-input><template #append>units/carton</template></el-input>
-                                </el-form-item>
-                            </el-col>
-                            <el-form-item label="Estimated dimensions of each Carton" style="margin-top: 20px">
-                                <div style="display: flex">
-                                    <el-input style="width: 20%" placeholder="width"><template #append>CM</template></el-input>
-                                    <span style="margin: 0 15px">×</span>
-                                    <el-input style="width: 20%" placeholder="length"><template #append>CM</template></el-input>
-                                    <span style="margin: 0 15px">×</span>
-                                    <el-input style="width: 20%" placeholder="height"><template #append>CM</template></el-input>
-                                </div>
-                            </el-form-item>
-                            <el-form-item label="Estimated Weight of each Carton (kg)">
-                                <el-input style="width: 260px"><template #append>kg</template></el-input>
-                            </el-form-item>
-                            <el-form-item label="HS Code">
-                                <el-input style="width: 260px"></el-input>
-                            </el-form-item>
                     </el-form>
-                    <div class="form-bottom">
+                    <div class="form-bottom" style="margin-top: 20px">
                         <el-checkbox v-model="isSave" label="Save this contact info"></el-checkbox>
                         <div>
                             <el-button link type="danger" icon="Delete">clear form</el-button>
@@ -136,5 +158,14 @@ const goBack = () => {
 .ware-num {
     font-size: 14px;
     font-weight: 400;
+}
+.est-total {
+    border-radius: 4px;
+    border: 1px;
+    background: #FFBE34;
+    padding: 2px 16px;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 500;
 }
 </style>

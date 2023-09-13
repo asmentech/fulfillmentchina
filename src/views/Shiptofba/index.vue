@@ -12,7 +12,7 @@
                 <el-button icon="Filter" class="plain-btn" style="margin-left: 32px">Filters</el-button>
             </div>
             <div>
-                <el-button icon="Ship" style="width: 192px" color="#FFBE34">Ship to FBA</el-button>
+                <el-button @click="createNew" icon="Ship" style="width: 192px" color="#FFBE34">Ship to FBA</el-button>
             </div>
         </div>
         <div class="bottom">
@@ -22,7 +22,12 @@
 </template>
 
 <script setup>
+import { useRouter } from 'vue-router'
 
+const router = useRouter()
+const createNew = function() {
+    router.push('/newShipment')
+}
 </script>
 
 <style lang="less" scoped>

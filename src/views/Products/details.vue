@@ -19,12 +19,12 @@
                         </div>
                     <div style="font-size: 16px;font-weight: 500;margin: 24px 0">Warehousing Options</div>
                     <div style="font-size: 16px;font-weight: 500;margin: 24px 0">Shipping Options</div>
-                    <div class="form-bottom">
+                    <!-- <div class="form-bottom">
                         <div>
                             <el-button link type="danger" icon="Delete">clear form</el-button>
                             <el-button color="#F2F2F2" style="width: 90px;font-weight: 500">Next</el-button>
                         </div>
-                    </div>
+                    </div> -->
             </el-col>
             <el-col :span="1"></el-col>
             <el-col :span="7" class="left-form">

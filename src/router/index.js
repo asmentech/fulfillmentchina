@@ -71,6 +71,12 @@ const router = createRouter({
           meta: { title: 'newProduct' }
         },
         {
+          path: '/newStorage',
+          name: "newStorage",
+          component: () => import("../views/Products/newStorage.vue"),
+          meta: { title: 'newStorage' }
+        },
+        {
           path: '/productDetails',
           name: "productDetails",
           component: () => import("../views/Products/details.vue"),

@@ -1,8 +1,8 @@
 <template>
     <div class="container">
         <div class="top">
-            <div style="font-size: 36px;font-weight: 600">Inventory</div>
-            <el-button icon="CirclePlus" color="#FFBE34" @click="createNew">Add new items</el-button>
+            <div style="font-size: 36px;font-weight: 600">Storage</div>
+            <el-button icon="CirclePlus" color="#FFBE34" @click="createNew">Add new Storage</el-button>
         </div>
         <el-divider style="margin-top: 15px"></el-divider>
         <div class="bottom">
@@ -62,7 +62,7 @@ const sellingList = ref([
 ])
 const router = useRouter()
 const createNew = function() {
-    router.push('/newShipment')
+    router.push('/newStorage')
 }
 </script>
 
