@@ -3,7 +3,7 @@
         <el-container>
             <el-aside width="256px" class="aside">
                 <el-image style="margin: 64px 0 50px 33%" src="/src/assets/logo.svg"></el-image>
-                <el-menu default-active="dashboard" @select="handleClick" background-color="#091242" text-color="#fff" active-text-color="#FFBE34">
+                <el-menu :default-active="store.state.tagActive" @select="handleClick" background-color="#091242" text-color="#fff" active-text-color="#FFBE34">
                     <el-menu-item v-for="(item) in menu" :key="item.key" :index="item.key">
                         <el-icon>
                             <el-image v-if="item.key == selectedKey" :src="'/src/assets/'+item.key+'.svg'" class="svg-selected"></el-image>
@@ -48,6 +48,7 @@ const store = useStore();
 
 const menu = ref([
     {key: 'dashboard',title: 'Dashboard'},
+    {key: 'client',title: 'Client'},
     // {key: 'warehouse',title: 'Warehouse In'},
     {key: 'shiptofba',title: 'Ship to FBA'},
     {key: 'products',title: 'Products'},
@@ -56,10 +57,10 @@ const menu = ref([
     {key: 'profile',title: 'Profile'},
     {key: 'support',title: 'Support'},
 ])
-const selectedKey = ref('dashboard')
+const selectedKey = ref(store.state.tagActive)
 const handleClick = function(index) {
-    selectedKey.value = index;
     store.commit('setTagActive', index);
+    selectedKey.value = store.state.tagActive;
     router.push(`/${index}`)
 }
 const logout = function() {

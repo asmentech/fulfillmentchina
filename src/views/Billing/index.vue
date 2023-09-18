@@ -1,18 +1,55 @@
 <template>
     <div class="container">
-        <div class="top">
-            <span>Billing</span>
-            <!-- <el-button icon="CirclePlus" style="width: 192px" color="#FFBE34">Add new products</el-button> -->
-        </div>
-        <el-divider style="margin-top: 15px"></el-divider>
-        <div class="bottom">
-            <el-table></el-table>
-        </div>
+        <div class="top">Billing</div>
+        <el-tabs v-model="activeTab" style="margin-top: 15px">
+            <el-tab-pane label="Storage costs." name="storage">
+                <div class="middle">
+                    <div style="display: flex">
+                        <el-input placeholder="Search here" style="width: 240px">
+                            <template #prefix>
+                                <el-icon style="color: #FFBE34"><search /></el-icon>
+                            </template>
+                        </el-input>
+                        <el-button icon="Filter" class="plain-btn" style="margin-left: 32px">Filters</el-button>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <el-table></el-table>
+                </div>
+            </el-tab-pane>
+            <el-tab-pane label="Shipping costs." name="ship">
+                <div class="middle">
+                    <div style="display: flex">
+                        <el-input placeholder="Search here" style="width: 240px">
+                            <template #prefix>
+                                <el-icon style="color: #FFBE34"><search /></el-icon>
+                            </template>
+                        </el-input>
+                        <el-button icon="Filter" class="plain-btn" style="margin-left: 32px">Filters</el-button>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <el-table></el-table>
+                </div>
+            </el-tab-pane>
+        </el-tabs>
+        
+        
     </div>
 </template>
 
 <script setup>
+import { ref } from 'vue'
+import { useRouter } from 'vue-router'
 
+const router = useRouter()
+const activeTab = ref('storage');
+const createNew = function() {
+    router.push('/newShipment')
+}
+const newStorage = function() {
+    router.push('/newStorage')
+}
 </script>
 
 <style lang="less" scoped>

@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <div class="top">Products</div>
+        <div class="top">Client</div>
         <el-divider style="margin-top: 15px"></el-divider>
         <div class="middle">
             <div style="display: flex">
@@ -10,9 +10,6 @@
                     </template>
                 </el-input>
                 <el-button icon="Filter" class="plain-btn" style="margin-left: 32px">Filters</el-button>
-            </div>
-            <div>
-                <el-button @click="addProducts" icon="CirclePlus" style="width: 192px" color="#FFBE34">Add New Product</el-button>
             </div>
         </div>
         <div class="bottom">
@@ -25,11 +22,14 @@
 import { useRouter } from 'vue-router'
 
 const router = useRouter()
-const addProducts = function() {
-    router.push('/newProduct')
+const createNew = function() {
+    router.push('/newShipment')
+}
+const newStorage = function() {
+    router.push('/newStorage')
 }
 const toDetail = function() {
-    router.push('/productDetails')
+    router.push('/clientDetails')
 }
 </script>
 

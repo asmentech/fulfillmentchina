@@ -16,7 +16,7 @@
             </div>
         </div>
         <div class="bottom">
-            <el-table></el-table>
+            <el-table @click="toDetail"></el-table>
         </div>
     </div>
 </template>
@@ -27,6 +27,9 @@ import { useRouter } from 'vue-router'
 const router = useRouter()
 const createNew = function() {
     router.push('/newShipment')
+}
+const toDetail = function() {
+    router.push('/shipmentDetails')
 }
 </script>
 

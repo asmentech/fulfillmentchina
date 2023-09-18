@@ -17,6 +17,12 @@ const router = createRouter({
           meta: { title: 'dashboard' }
         },
         {
+          path: '/client',
+          name: "client",
+          component: () => import("../views/Client/index.vue"),
+          meta: { title: 'client' }
+        },
+        {
           path: '/warehouse',
           name: "warehouse",
           component: () => import("../views/Warehouse/index.vue"),
@@ -81,6 +87,24 @@ const router = createRouter({
           name: "productDetails",
           component: () => import("../views/Products/details.vue"),
           meta: { title: 'productDetails' }
+        },
+        {
+          path: '/clientDetails',
+          name: "clientDetails",
+          component: () => import("../views/Client/details.vue"),
+          meta: { title: 'clientDetails' }
+        },
+        {
+          path: '/storageDetails',
+          name: "storageDetails",
+          component: () => import("../views/Inventory/details.vue"),
+          meta: { title: 'storageDetails' }
+        },
+        {
+          path: '/shipmentDetails',
+          name: "shipmentDetails",
+          component: () => import("../views/Shiptofba/details.vue"),
+          meta: { title: 'shipmentDetails' }
         },
         {
           path: '/fcorder',

@@ -1,68 +1,41 @@
 <template>
     <div class="container">
-        <div class="top">
-            <div style="font-size: 36px;font-weight: 600">Storage</div>
-            <el-button icon="CirclePlus" color="#FFBE34" @click="createNew">Add new Storage</el-button>
-        </div>
+        <div class="top">Storage</div>
         <el-divider style="margin-top: 15px"></el-divider>
+        <div class="middle">
+            <div style="display: flex">
+                <el-input placeholder="Search here" style="width: 240px">
+                    <template #prefix>
+                        <el-icon style="color: #FFBE34"><search /></el-icon>
+                    </template>
+                </el-input>
+                <el-button icon="Filter" class="plain-btn" style="margin-left: 32px">Filters</el-button>
+            </div>
+            <div>
+                <el-button @click="newStorage" icon="CirclePlus" plain style="width: 192px;margin-right: 48px" color="#FFBE34">
+                    Create New Storage
+                </el-button>
+                <el-button @click="createNew" icon="Ship" style="width: 192px" color="#FFBE34">Ship to FBA</el-button>
+            </div>
+        </div>
         <div class="bottom">
-            <el-col :span="7">
-                <div class="bottom-table">
-                    <div class="title">
-                        <div style="font-size: 20px;font-weight: 700">Top Selling Stock</div>
-                        <div style="font-size: 10px;line-height: 32px">See All</div>
-                    </div>
-                    <div class="type">
-                        <div>Name</div>
-                        <div>Sold</div>
-                        <div>In Stock</div>
-                    </div>
-                    <div class="number" v-for="(item,index) in sellingList" :key="index">
-                        <div>{{item.name}}</div>
-                        <div>{{item.sold}}</div>
-                        <div>{{item.inStock}}</div>
-                    </div>
-                </div>
-                <div style="margin-top: 64px" class="bottom-table">
-                    <div class="title">
-                        <div style="font-size: 20px;font-weight: 700">low Quantity Stock</div>
-                        <div style="font-size: 10px;line-height: 32px">See All</div>
-                    </div>
-                    <div class="type">
-                        <div>Name</div>
-                        <div>Sold</div>
-                        <div>In Stock</div>
-                    </div>
-                    <div class="number" v-for="(item,index) in sellingList" :key="index">
-                        <div>{{item.name}}</div>
-                        <div>{{item.sold}}</div>
-                        <div>{{item.inStock}}</div>
-                    </div>
-                </div>
-            </el-col>
-            <el-col :span="1"></el-col>
-            <el-col :span="16" class="bottom-table" style="padding: 10px">
-                <el-table>
-
-                </el-table>
-            </el-col>
+            <el-table @click="toDetail"></el-table>
         </div>
     </div>
 </template>
 
 <script setup>
-import { ref } from 'vue'
 import { useRouter } from 'vue-router'
 
-const sellingList = ref([
-    {name: '#1',sold: 2000,inStock: 1500},
-    {name: '#2',sold: 2614,inStock: 2121},
-    {name: '#3',sold: 5161,inStock: 4188},
-    {name: '#4',sold: 5113,inStock: 5151},
-])
 const router = useRouter()
 const createNew = function() {
+    router.push('/newShipment')
+}
+const newStorage = function() {
     router.push('/newStorage')
+}
+const toDetail = function() {
+    router.push('/storageDetails')
 }
 </script>
 
@@ -75,34 +48,19 @@ const createNew = function() {
     justify-content: space-between;
     color: #091242;
     font-family: Inter;
-    font-weight: 500;
+    font-size: 36px;
+    font-weight: 600;
     align-items: center;
 }
-.bottom {
+.middle {
     display: flex;
-    margin-top: 48px;
-    .bottom-table {
-        border-radius: 15px;
-        box-shadow: 0px 0px 10px -3px rgba(0, 0, 0, 0.25);
-        padding: 19px 26px;
-        font-weight: 500;
-        background: #F2F2F2;
-        .title {
-            display: flex;
-            justify-content: space-between;
-        }
-        .type {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 16px;
-        }
-        .number {
-            display: flex;
-            justify-content: space-between;
-            font-size: 12px;
-            font-weight: 400;
-            line-height: 30px;
-        }
-    }
+    justify-content: space-between;
+}
+.bottom {
+    margin-top: 25px;
+    border-radius: 15px;
+    background: var(--white-100, #FFF);
+    box-shadow: 0px 0px 10px -3px rgba(0, 0, 0, 0.25);
+    padding: 10px;
 }
 </style>
