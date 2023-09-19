@@ -6,7 +6,7 @@ const routes = [
       name: "Layout",
       component: () => import("../components/Layout.vue"),
       meta: { title: 'Fulfillment China' },
-      redirect: '/login',
+      redirect: '/main',
       children: [
         {
           path: '/dashboard',
@@ -117,6 +117,12 @@ const routes = [
       name: "login",
       component: () => import("../views/Login/index.vue"),
       meta: { title: 'login' }
+    },
+    {
+      path: '/main',
+      name: "main",
+      component: () => import("../components/Mainpage/index.vue"),
+      meta: { title: 'main' }
     }
   ]
 

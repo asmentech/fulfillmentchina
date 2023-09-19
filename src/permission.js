@@ -9,7 +9,7 @@
 import NProgress from "nprogress"
 import "nprogress/nprogress.css"
 import router from "./router"
-const whitePath = [ '/login']
+const whitePath = [ '/login','/main']
 router.beforeEach((to, from, next) => {
     NProgress.start()
     // const token = store.getters.getToken;
