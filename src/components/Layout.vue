@@ -15,19 +15,31 @@
             </el-aside>
             <el-container class="container">
                 <el-header class="header">
-                    <el-image src="../src/assets/ringbell.svg" style="margin-right: 20px"></el-image>
-                    <el-avatar :size="45" style="margin-right: 20px"></el-avatar>
-                    <div>Mary</div>
-                    <el-dropdown style="margin-left: 80px">
-                        <el-icon>
-                            <arrow-down />
-                        </el-icon>
-                        <template #dropdown>
-                            <el-dropdown-menu>
-                                <el-dropdown-item @click="logout">Log Out</el-dropdown-item>
-                            </el-dropdown-menu>
-                        </template>
-                    </el-dropdown>
+                    <div style="display: flex;align-items: center">
+                        <el-breadcrumb-item v-for="(item, index) in breadcrumbs" :key="index">
+                            <a v-if="index === 0">
+                                <el-icon style="vertical-align: middle" @click="goBack">
+                                    <ArrowLeft />
+                                </el-icon>
+                            </a>
+                            <a v-else>{{ item.title }}</a>
+                        </el-breadcrumb-item>
+                    </div>
+                    <div style="display: flex;align-items: center">
+                        <el-image src="../src/assets/ringbell.svg" style="margin-right: 20px"></el-image>
+                        <el-avatar :size="45" style="margin-right: 20px"></el-avatar>
+                        <div>Mary</div>
+                        <el-dropdown style="margin-left: 80px">
+                            <el-icon>
+                                <arrow-down />
+                            </el-icon>
+                            <template #dropdown>
+                                <el-dropdown-menu>
+                                    <el-dropdown-item @click="logout">Log Out</el-dropdown-item>
+                                </el-dropdown-menu>
+                            </template>
+                        </el-dropdown>
+                    </div>
                 </el-header>
                 <el-main class="main">
                     <router-view></router-view>
@@ -38,7 +50,7 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
+import { ref, computed, watch } from "vue";
 import { useRouter } from 'vue-router'
 import { useStore } from "vuex";
 import { ElMessageBox } from 'element-plus'
@@ -57,18 +69,41 @@ const menu = ref([
     {key: 'profile',title: 'Profile'},
     {key: 'support',title: 'Support'},
 ])
+const breadcrumbs = computed(() => {
+    return store.state.breadcrumbs;
+});
 const selectedKey = ref(store.state.tagActive)
 const handleClick = function(index) {
     store.commit('setTagActive', index);
     selectedKey.value = store.state.tagActive;
     router.push(`/${index}`)
 }
+const goBack = function() {
+    router.go(-1);
+}
 const logout = function() {
     ElMessageBox.confirm('Are you sure to log out?').then(() => {
         router.push('/login')
     }).catch(() => {})
 }
-
+watch(
+    () => router.currentRoute.value,
+    (val) => {
+        const matched = val.matched || [];
+        const breadcrumbs = [];
+        matched.forEach(ele => {
+            let obj = {
+                title: ele.meta.title,
+                path: ele.path
+            };
+            if(obj.title) {
+                breadcrumbs.push(obj);
+            }
+        })
+        store.commit('setBreadcrumbs', breadcrumbs);
+    },
+    { immediate: true }
+)
 
 </script>
 
@@ -84,9 +119,9 @@ const logout = function() {
 .container {
     width: 100%;
     .header {
-        padding: 36px 12% 0 10%;
+        padding: 36px 12% 0 4.5%;
         display: flex;
-        justify-content: flex-end;
+        justify-content: space-between;
         align-items: center
     };
     .main {

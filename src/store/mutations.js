@@ -8,4 +8,7 @@ export default {
         state.tagActive = log;
         LS.put('tagActive', log, 1 / 8);
     },
+    setBreadcrumbs: (state, log) => {
+        state.breadcrumbs = log;
+    },
 }

@@ -4,5 +4,8 @@ export default {
     },
     getTagActive(state) {
         return state.tagActive
-    }
+    },
+    getBreadcrumbs(state) {
+        return state.breadcrumbs
+    },
 }

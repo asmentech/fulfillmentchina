@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <el-button color="#FFBE34" icon="Back" size="small" style="width: 80px" @click="goBack">Back</el-button>
+        <!-- <el-button color="#FFBE34" icon="Back" size="small" style="width: 80px" @click="goBack">Back</el-button> -->
         <div class="top">Client Details</div>
         <div class="bottom">
             <el-col :span="7" class="left-form">

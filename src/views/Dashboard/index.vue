@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="container" style="margin-left: -3%">
         <div class="top">
             <div>
                 <div>Hello Mary,</div>
@@ -85,6 +85,7 @@ const addNew = function() {
     font-family: Inter;
     font-weight: 500;
     align-items: center;
+    margin-top: 36px
 }
 .middle {
     display: flex;

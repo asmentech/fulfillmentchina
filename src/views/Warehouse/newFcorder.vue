@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <el-button color="#FFBE34" icon="Back" size="small" style="width: 80px" @click="goBack">Back</el-button>
+        <!-- <el-button color="#FFBE34" icon="Back" size="small" style="width: 80px" @click="goBack">Back</el-button> -->
         <div class="top">Create New FC Order</div>
         <div class="bottom">
             <el-col :span="16" class="left-form">

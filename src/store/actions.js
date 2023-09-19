@@ -4,5 +4,8 @@ export default {
     },
     setTagActive: ({ commit }, log) => {
         commit('setTagActive', log);
-    }
+    },
+    setBreadcrumbs: ({ commit }, log) => {
+        commit('setBreadcrumbs', log);
+    },
 }
