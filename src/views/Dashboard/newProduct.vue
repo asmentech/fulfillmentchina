@@ -5,7 +5,10 @@
         <div class="bottom">
             <el-col :span="16" class="left-form">
                 <el-scrollbar height="560px">
-                <div style="font-size: 24px;font-weight: 600">Product</div>
+                <div style="font-size: 24px;font-weight: 600;display: flex;justify-content: space-between">
+                    <div>Product</div>
+                    <el-button icon="Memo" color="#FFBE34" style="margin-top: 5px">Save this Info</el-button>
+                </div>
                 <el-divider style="margin-bottom: 0px"></el-divider>
                     <el-form label-position="top" style="margin-top: 20px">
                         <div style="font-size: 16px;font-weight: 500;margin: 10px 0">Basic information</div>
@@ -42,11 +45,8 @@
                             </el-form-item>
                     </el-form>
                     <div class="form-bottom">
-                        <el-checkbox v-model="isSave" label="Save this contact info"></el-checkbox>
-                        <div>
-                            <el-button link type="danger" icon="Delete">clear form</el-button>
-                            <el-button color="#F2F2F2" style="width: 90px;font-weight: 500">Next</el-button>
-                        </div>
+                        <el-button color="#FFBE34" icon="Check">submit</el-button>
+                        <el-button color="#F2F2F2" icon="Close">Cancel</el-button>
                     </div>
                 </el-scrollbar>
             </el-col>
@@ -101,10 +101,10 @@ const goBack = () => {
         border-radius: 15px;
         background: var(--white-100, #FFF);
         box-shadow: 0px 0px 10px -3px rgba(0, 0, 0, 0.25);
-        padding: 15px 25px;
+        padding: 15px 30px;
         .form-bottom {
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-end;
             margin-top: 24px;
         };
         .sum-item {

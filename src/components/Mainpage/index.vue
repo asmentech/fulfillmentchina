@@ -11,7 +11,7 @@
                     <el-button class="nav-btn" link @click="scrollTo('caseStudies')">Case Studies</el-button>
                     <el-button class="nav-btn" link @click="scrollTo('ourFee')">Our Fees</el-button>
                     <el-button class="nav-btn" link @click="scrollTo('getAquote')">Get a quote</el-button>
-                    <el-button class="nav-btn" link>FAQ's</el-button>
+                    <el-button class="nav-btn" link @click="scrollTo('qna')">FAQ's</el-button>
                     <el-button color="#FFBE34" class="login-btn" style="width: 190px" @click="toLogin">SIGN UP</el-button>
                     <el-button color="#FFBE34" class="login-btn" style="width: 185px" @click="toLogin">LOG IN</el-button>
                 </el-col>
@@ -552,6 +552,41 @@
                         </div>
                     </el-col>
                 </el-row>
+                <div style="margin: 0 25% 0 25%;margin-bottom: 120px" id="qna">
+                    <el-collapse>
+                        <el-collapse-item title="What is Fulfillment China?">
+                            <div>
+                                Fulfillment China is a total supply chain solution where we manage the 
+                                storage of your goods in our Chinese warehouses, we prep your cartons, and 
+                                we ship your goods directly into Amazon’s fulfilment centres. On top of this, 
+                                you get access to our user-friendly software management platform to help you 
+                                manage and oversee your entire E-comm supply chain with the click of a button.
+                            </div>
+                        </el-collapse-item>
+                        <el-collapse-item title="What sort of Amazon sellers can use Fulfillment China?">
+                            <div>
+                                All sellers can use Fulfillment China. Whether you're shipping full containers
+                                 (FCL) or just doing less than container loads (LCL), our solution is perfect 
+                                 for any size seller. What's important for us is that Fulfillment China helps 
+                                 Amazon sellers of all sizes implement efficiencies into their supply chain 
+                                 processes to ensure they maximise profits and save money.
+                            </div>
+                        </el-collapse-item>
+                        <el-collapse-item title="So Fulfillment China takes care of my storage and shipping into Amazon, is that correct?">
+                            <div>
+                                Yes. That's correct. We store your goods in our secure warehouses in China and our 
+                                product dashboard allows you to track how many units and cartons you have available 
+                                to send directly into Amazon. When you're ready to send cartons into Amazon, simply 
+                                pick your SKU's and carton quantities, create your Amazon shipping plans with the click 
+                                of a button, and once you're happy with everything, we then generate an instant shipping 
+                                quote for you. We take care of the rest as we pick, prep, and ship your cartons to Amazon. 
+                                All this is done from within our system. There's no need to go to Seller Central to create 
+                                your shipping plans, no need to attach and send us shipping labels, this is all automated by 
+                                our supply chain system.
+                            </div>
+                        </el-collapse-item>
+                    </el-collapse>
+                </div>
             </div>
         </div>
         <el-footer height="600" class="ly-footer">

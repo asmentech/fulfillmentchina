@@ -16,15 +16,43 @@
             </div>
         </div>
         <div class="bottom">
-            <el-table @click="toDetail"></el-table>
+            <el-table :data="tableData">
+                <el-table-column prop="date" label="Date" />
+                <el-table-column prop="productName" label="Product Name" />
+                <el-table-column prop="statue" label="Statue">
+                    <template #default="item">
+                        <el-tag v-if="item.row.statue == 1" type="warning" round>In Transit</el-tag>
+                        <el-tag v-if="item.row.statue == 2" type="success" round>Paid</el-tag>
+                        <el-tag v-if="item.row.statue == 3" type="danger" round>Pending</el-tag>
+                        <el-tag v-if="item.row.statue == 4" color="#CFDDFF" style="color: #2A57CA" round>Invoiced</el-tag>
+                    </template>
+                </el-table-column>
+                <el-table-column prop="deliverAddress" label="Deliver Address" />
+                <el-table-column prop="orderNum" label="Order Number" />
+                <el-table-column label="Action" width="280">
+                    <template #default>
+                        <el-button style="color: #FFF" round color="#67C23A">View</el-button>
+                        <el-button color="#2A57CA" round>Edit</el-button>
+                        <el-button style="color: #FFF" round color="#FF4B4B">Cancel</el-button>
+                    </template>
+                </el-table-column>
+            </el-table>
         </div>
     </div>
 </template>
 
 <script setup>
+import { ref } from 'vue'
 import { useRouter } from 'vue-router'
 
 const router = useRouter()
+
+const tableData = ref([
+    {date: '11', productName: 'name',statue: 1,deliverAddress: 'address', orderNum: '1112'},
+    {date: '11', productName: 'name',statue: 2,deliverAddress: 'address', orderNum: '1112'},
+    {date: '11', productName: 'name',statue: 3,deliverAddress: 'address', orderNum: '1112'},
+    {date: '11', productName: 'name',statue: 4,deliverAddress: 'address', orderNum: '1112'},
+])
 const createNew = function() {
     router.push('/newShipment')
 }

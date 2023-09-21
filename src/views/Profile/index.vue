@@ -4,8 +4,10 @@
             <span>Profile</span>    
         </div>
         <div class="middle">
+            <el-avatar :size="90"></el-avatar>
+        </div>
+        <div class="middle">
             <div style="width: 55%">
-                <el-avatar :size="80"></el-avatar>
                 <el-form label-position="top" style="margin-top: 20px">
                     <el-row>
                         <el-col :span="10">
@@ -50,9 +52,20 @@
                             </el-form-item>
                         </el-col>
                     </el-row>
+                    <el-row>
+                        <el-col :span="24">
+                            <el-form-item label="Shipping Address">
+                                <el-input type="textarea" placeholder="address" style="width: 100%"></el-input>
+                            </el-form-item>
+                        </el-col>
+                    </el-row>
                 </el-form>
             </div>
         </div>
+        <div class="middle">
+            <el-button style="width: 256px" color="#FFBE34">edit</el-button>
+        </div>
+        
     </div>
 </template>
 
@@ -79,6 +92,6 @@ const gender = ref(0);
     display: flex;
     justify-content: center;
     padding-right: 7%;
-    margin-top: 60px;
+    margin-top: 30px;
 }
 </style>
