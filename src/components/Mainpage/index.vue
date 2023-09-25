@@ -36,7 +36,7 @@
                 <el-row justify="space-evenly">
                     <el-col :span="6" style="display: flex">
                         <div class="feature-item">
-                            <el-image style="margin-left: 20%;height: 171px" src=" /feature1.png"></el-image>
+                            <el-image style="margin-left: 20%;height: 171px" src="/feature1.png"></el-image>
                             <div class="feature-one">Intelligent China Warehousing</div>
                             <div class="feature-two">#Extremely low cost, automated#</div>
                             <div class="feature-three">We utilize robots and automation systems for 24/7 unmanned 
