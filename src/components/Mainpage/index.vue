@@ -160,15 +160,15 @@
                         </div>
                         <el-row justify="space-between" class="moq-list" style="margin-top: 53px">
                             <el-col :span="8" style="display: flex;">
-                                <el-image src="/src/svgs/moqSVG.svg" style="height: 58px"></el-image>
+                                <el-image src="/svgs/moqSVG.svg" style="height: 58px"></el-image>
                                 <div style="margin: 10px 0 0 8px">NO MOQ Required</div>
                             </el-col>
                             <el-col :span="8" style="display: flex;">
-                                <el-image src="/src/svgs/cubeSVG.svg" style="height: 72px"></el-image>
+                                <el-image src="/svgs/cubeSVG.svg" style="height: 72px"></el-image>
                                 <div style="margin: 10px 0 0 2px">60-day Free Warehousing</div>
                             </el-col>
                             <el-col :span="8" style="display: flex;">
-                                <el-image src="/src/svgs/coinSVG.svg" style="height: 75px"></el-image>
+                                <el-image src="/svgs/coinSVG.svg" style="height: 75px"></el-image>
                                 <div style="margin: 10px 0 0 2px">40% Savings On Shipping Cost</div>
                             </el-col>
                         </el-row>
@@ -181,7 +181,7 @@
                         <div>Supply Chain Partner</div>
                     </el-col>
                     <el-col :span="12">
-                        <el-image src="/src/svgs/midlogo.svg"></el-image>
+                        <el-image src="/svgs/midlogo.svg"></el-image>
                         <span class="middle-title"> Fulfillment China</span>
                     </el-col>
                 </div>
@@ -497,14 +497,14 @@
                         <el-col :span="8" style="font-weight: 900;font-size: 32px;font-family: Inter;">Fulfillment China</el-col>
                     </el-row>
                     <el-row class="compare-item" v-for="(item, index) in compareList" :key='index' :style="index%2 == 1 ? '':'background: #D9D9D9'">
-                        <el-col style="text-align: left" :span="8">{{item.title}}</el-col>
+                        <el-col style="text-align: left; color: black" :span="8">{{item.title}}</el-col>
                         <el-col :span="8" class="compare-text">
-                            <embed src="/src/svgs/compareno.svg" type="image/svg+xml" />
-                            <div>{{item.bads}}</div>
+                            <embed src="/svgs/compareno.svg" type="image/svg+xml" />
+                            <div style="color: black">{{item.bads}}</div>
                         </el-col>
                         <el-col :span="8" class="compare-text">
-                            <embed src="/src/svgs/compareyes.svg" type="image/svg+xml" />
-                            <div>{{item.goods}}</div>
+                            <embed src="/svgs/compareyes.svg" type="image/svg+xml" />
+                            <div style="color: black">{{item.goods}}</div>
                         </el-col>
                     </el-row>
                 </div>
@@ -594,7 +594,7 @@
                 <el-col :span="2"></el-col>
                 <el-col :span="6">
                     <div>
-                        <embed src="/src/svgs/footerlogo.svg" type="">
+                        <embed src="/svgs/footerlogo.svg" type="">
                         <span style="font-weight: 900;font-size: 32px"> Fulfillment China</span>
                     </div>
                     <div style="margin-left: 40px;color: #BBBEC7">
