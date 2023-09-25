@@ -3,7 +3,7 @@
         <el-header class="ly-header">
             <el-row style="height: 100%">
                 <el-col :span="12" class="nav-item">
-                    <el-image src="/src/pictures/logo.png" style="margin-left: 96px"></el-image>
+                    <el-image src=" /logo.png" style="margin-left: 96px"></el-image>
                     <span class="title-text" style="margin-left: 8px">Fulfillment China</span>
                 </el-col> 
                 <el-col :span="12" class="nav-item">
@@ -36,7 +36,7 @@
                 <el-row justify="space-evenly">
                     <el-col :span="6" style="display: flex">
                         <div class="feature-item">
-                            <el-image style="margin-left: 20%;height: 171px" src="/src/pictures/feature1.png"></el-image>
+                            <el-image style="margin-left: 20%;height: 171px" src=" /feature1.png"></el-image>
                             <div class="feature-one">Intelligent China Warehousing</div>
                             <div class="feature-two">#Extremely low cost, automated#</div>
                             <div class="feature-three">We utilize robots and automation systems for 24/7 unmanned 
@@ -48,7 +48,7 @@
                     </el-col>
                     <el-col :span="6" style="display: flex">
                         <div class="feature-item">
-                            <el-image style="margin-left: 20%;height: 145px" src="/src/pictures/feature2.png"></el-image>
+                            <el-image style="margin-left: 20%;height: 145px" src="/feature2.png"></el-image>
                             <div class="feature-one">Intelligent Logistics & Tracking</div>
                             <div class="feature-two">#Data-driven, precise predictions#</div>
                             <div class="feature-three">Through deep learning and predictive analytics algorithms, 
@@ -60,7 +60,7 @@
                     </el-col>
                     <el-col :span="6" style="display: flex">
                         <div class="feature-item">
-                            <el-image style="margin-left: 20%;height: 171px" src="/src/pictures/feature3.png"></el-image>
+                            <el-image style="margin-left: 20%;height: 171px" src=" /feature3.png"></el-image>
                             <div class="feature-one">Integrated Smart Supply Chain</div>
                             <div class="feature-two">#Zero gap connections, end-to-end visibility#</div>
                             <div class="feature-three">Via our proprietary blockchain and Iot technologies, we 
@@ -86,12 +86,12 @@
                     </div>
                 </el-row>
                 <el-row justify="center">
-                    <el-image src="/src/pictures/howBiz.png" style="padding-top: 82px"></el-image>
+                    <el-image src=" /howBiz.png" style="padding-top: 82px"></el-image>
                 </el-row>
                 <el-row justify="space-evenly">
                     <el-col :span="7" class="we-box">
                         <div class="we-text1" style="color: #FFFFFF">
-                            <el-image src="/src/pictures/wepic1.png" class="we-pic"></el-image>
+                            <el-image src=" /wepic1.png" class="we-pic"></el-image>
                             WE MANAGE
                         </div>
                         <div class="we-text15" style="margin: 22px 15% 0 15%;color: #FFFFFF">Fulfillment China guides your carton's journey to Amazon.</div>
@@ -101,7 +101,7 @@
                         </div>
                     </el-col>
                     <el-col :span="7" class="we-box" style="background: #FFBE34;">
-                        <el-image src="/src/pictures/wepic2.png" class="we-pic" style="left: 25%"></el-image>
+                        <el-image src=" /wepic2.png" class="we-pic" style="left: 25%"></el-image>
                         <div class="we-text1">WE SIMPLIFY</div>
                         <div class="we-text15" style="margin: 22px 15% 0 15%;">Our software serves as your essential supply chain management tool.</div>
                         <div class="we-text2" style="margin-top: 30px">Gain comprehensive stock level visibility, restock easily 
@@ -113,7 +113,7 @@
                 <el-row style="padding-top: 120px">
                     <el-col :span="3"></el-col>
                     <el-col :span="9">
-                        <el-image src="/src/pictures/bestrate.png" style="margin-left: 25px"></el-image>
+                        <el-image src=" /bestrate.png" style="margin-left: 25px"></el-image>
                     </el-col>
                     <el-col :span="9" style="padding: 90px 0 0 40px">
                         <div class="bestrate-title">Fulfillent China Price Promise</div>
@@ -140,7 +140,7 @@
                     <el-col :span="3"></el-col>
                     <el-col :span="9">
                         <div style="background: rgb(7,20,56);border-radius: 500px;width: 75%;height: 75%;transform: translateX(0)">
-                            <el-image src="/src/pictures/maleimg.png" style="border-radius: 500px;position: relative;bottom: 30%">
+                            <el-image src=" /maleimg.png" style="border-radius: 500px;position: relative;bottom: 30%">
                             </el-image>
                         </div>
                     </el-col>
@@ -188,7 +188,7 @@
                 <el-row style="padding-top: 200px">
                     <el-col :span="2"></el-col>
                     <el-col :span="9">
-                        <el-image src="/src/pictures/storage.png"></el-image>
+                        <el-image src=" /storage.png"></el-image>
                     </el-col>
                     <el-col :span="2"></el-col>
                     <el-col :span="8" style="padding-top: 80px">
@@ -226,7 +226,7 @@
                         </div>
                     </el-row>
                     <el-row justify="center">
-                        <el-image src="/src/pictures/singlewarehouse.png" style="padding-top: 142px"></el-image>
+                        <el-image src=" /singlewarehouse.png" style="padding-top: 142px"></el-image>
                     </el-row>
                 </div>
                 <el-row style="margin-top: 180px;padding-bottom: 100px">
@@ -247,7 +247,7 @@
                         <el-button color="#FFBE34" class="login-btn" style="width: 220px;margin-top: 24px">GET STARTED</el-button>
                     </el-col>
                     <el-col :span="8" style="padding-top: 80px">
-                        <el-image src="/src/pictures/savetime.png"></el-image>
+                        <el-image src=" /savetime.png"></el-image>
                     </el-col>
                 </el-row>
                 <div>
@@ -267,7 +267,7 @@
                         </div>
                     </el-row>
                     <el-row justify="center">
-                        <el-image src="/src/pictures/3pls.png" style="padding-top: 142px"></el-image>
+                        <el-image src=" /3pls.png" style="padding-top: 142px"></el-image>
                     </el-row>
                 </div>
                 <el-row style="margin-top: 140px">
@@ -298,13 +298,13 @@
                     </el-col>
                     <el-col :span="2"></el-col>
                     <el-col :span="8" style="padding-top: 150px">
-                        <el-image src="/src/pictures/cash.png"></el-image>
+                        <el-image src=" /cash.png"></el-image>
                     </el-col>
                 </el-row>
                 <el-row style="margin-top: 140px">
                     <el-col :span="2"></el-col>
                     <el-col :span="8" style="padding-top: 40px;margin-left: 30px">
-                        <el-image src="/src/pictures/computer.png"></el-image>
+                        <el-image src=" /computer.png"></el-image>
                     </el-col>
                     <el-col :span="2"></el-col>
                     <el-col :span="10" style="padding-top: 80px">
@@ -338,7 +338,7 @@
                     </el-row>
                     <el-row justify="center">
                         <el-col :span="3">
-                            <el-image src="/src/pictures/casestudy1.png"></el-image>
+                            <el-image src=" /casestudy1.png"></el-image>
                         </el-col>
                         <el-col :span="1"></el-col>
                         <el-col :span="12">
@@ -368,7 +368,7 @@
                     <el-divider style="width: 75%;margin-left: 12.5%"></el-divider>
                     <el-row justify="center">
                         <el-col :span="3">
-                            <el-image src="/src/pictures/casestudy2.png"></el-image>
+                            <el-image src=" /casestudy2.png"></el-image>
                         </el-col>
                         <el-col :span="1"></el-col>
                         <el-col :span="12">
@@ -435,12 +435,12 @@
                 <div style="margin: 60px 0% 0 20%">
                     <div style="display: flex;background: #D9D9D9;width: 400px;padding: 8px 0px 8px 14px;border-radius: 6px">
                         <span style="font-weight: 500">Select your Market :</span>
-                        <el-image src="/src/pictures/usflag.png" style="height: 22.5px;width: 40px;margin: auto"></el-image>
+                        <el-image src=" /usflag.png" style="height: 22.5px;width: 40px;margin: auto"></el-image>
                         <el-radio-group fill="#091242" v-model="chosenCountry" size="small">
                             <el-radio-button label="US" />
                             <el-radio-button label="UK" />
                         </el-radio-group>
-                        <el-image src="/src/pictures/ukflag.png" style="height: 22.5px;width: 40px;margin: auto"></el-image>
+                        <el-image src=" /ukflag.png" style="height: 22.5px;width: 40px;margin: auto"></el-image>
                     </div>
                     <div style="padding: 8px 0px 8px 14px;font-weight: 500;margin-top: 19px"> Enter your carton details below</div>
                     <div class="carton-calc" style="display: flex;padding: 8px 0 8px 14px;">
@@ -691,7 +691,7 @@ const toLogin = function() {
 .main-content {
     align-items: center;
     .first-page {
-        background-image: url("/src/pictures/ffChina.png");
+        background-image: url(" /ffChina.png");
         background-size: 100% 100%;
         min-height: 770px;
         text-align: center;
@@ -713,7 +713,7 @@ const toLogin = function() {
         }
     }
     .middle-page {
-        background-image: url("/src/pictures/midpic.png");
+        background-image: url(" /midpic.png");
         background-size: 100% 100%;
         min-height: 504px;
         display: flex;
@@ -732,7 +732,7 @@ const toLogin = function() {
         }
     }
     .guar-page {
-        background-image: url("/src/pictures/guarantee.png");
+        background-image: url(" /guarantee.png");
         background-size: 100% 100%;
         min-height: 504px;
         padding-top: 60px;
