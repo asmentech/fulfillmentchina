@@ -8,24 +8,47 @@
                     }</div>
                 <el-divider style="margin-bottom: 0px"></el-divider>
                     <div style="font-size: 16px;font-weight: 500;margin: 10px 0">Basic information</div>
-                        <div>
-                            <el-descriptions direction="vertical" :column="2">
-                                <el-descriptions-item label="Product Name">
-                                    <span style="font-size: 16px;font-weight: 400">Wireless Mouse</span>
-                                </el-descriptions-item>
-                                <el-descriptions-item label="Product Category">
-                                    <span style="font-size: 16px;font-weight: 400">Computer Accessories</span>
-                                </el-descriptions-item>
-                            </el-descriptions>
+                        <div class="des-title">Product Name</div>
+                        <el-input style="width: 360px"></el-input>
+                        <div class="des-title">Product Information</div>
+                        <div style="display: flex">
+                            <el-input style="width: 160px"><template #append>cartons</template></el-input>
+                            <el-input style="width: 240px;margin-left: 32px"><template #append>units/carton</template></el-input>
                         </div>
-                    <div style="font-size: 16px;font-weight: 500;margin: 24px 0">Warehousing Options</div>
-                    <div style="font-size: 16px;font-weight: 500;margin: 24px 0">Shipping Options</div>
-                    <!-- <div class="form-bottom">
-                        <div>
-                            <el-button link type="danger" icon="Delete">clear form</el-button>
-                            <el-button color="#F2F2F2" style="width: 90px;font-weight: 500">Next</el-button>
+                        <div style="display: flex">
+                            <div>
+                                <div class="des-title">Estimated Weight of each Carton (kg)</div>
+                                <el-input style="width: 160px"></el-input>
+                            </div>
+                            <div style="margin-left: 40px">
+                                <div class="des-title">Estimated total weight</div>
+                                <el-input style="width: 160px"></el-input>
+                            </div>
                         </div>
-                    </div> -->
+                        <div style="display: flex">
+                            <div>
+                                <div class="des-title">Estimated dimensions of each Carton</div>
+                                <div style="display: flex">
+                                    <el-input style="width: 100px"></el-input>
+                                    <el-input style="width: 100px"></el-input>
+                                    <el-input style="width: 100px"></el-input>
+                                </div>
+                            </div>
+                            <div style="margin-left: 40px">
+                                <div class="des-title">Estimated total volume</div>
+                                <el-input style="width: 160px"></el-input>
+                            </div>
+                        </div>
+                        <div style="display: flex">
+                            <div>
+                                <div class="des-title">Warehouse</div>
+                                <el-input style="width: 160px"></el-input>
+                            </div>
+                            <div style="margin-left: 180px">
+                                <div class="des-title">Storage Time</div>
+                                <el-input style="width: 160px"></el-input>
+                            </div>
+                        </div>
             </el-col>
             <el-col :span="1"></el-col>
             <el-col :span="7" class="left-form">
@@ -90,8 +113,9 @@ const goBack = () => {
     font-size: 14px;
     font-weight: 400;
 }
-.des-label {
+.des-title {
     font-size: 12px;
-    font-weight: 600;
+    font-weight: 400;
+    margin: 22px 0 22px 0
 }
 </style>

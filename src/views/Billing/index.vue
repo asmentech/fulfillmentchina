@@ -29,7 +29,23 @@
                     </div>
                 </div>
                 <div class="bottom">
-                    <el-table></el-table>
+                    <el-table :data="tableData">
+                        <el-table-column prop="date" label="Date" />
+                        <el-table-column prop="productName" label="Product Name" />
+                        <el-table-column prop="state" label="State">
+                            <template #default="item">
+                                <el-tag v-if="item.row.state == 1" type="success" round>paid</el-tag>
+                                <el-tag v-if="item.row.state == 2" type="danger" round>to be paid</el-tag>
+                            </template>
+                        </el-table-column>
+                        <el-table-column prop="orderNum" label="Order Number" />
+                        <el-table-column prop="duration" label="Duration" />
+                        <el-table-column label="Action" width="280">
+                            <template #default="item">
+                                <el-button v-if="item.row.state == 2" style="color: #FFF" round color="#FFBE34">Pay</el-button>
+                            </template>
+                        </el-table-column>
+                    </el-table>
                 </div>
             </el-tab-pane>
         </el-tabs>
@@ -44,6 +60,11 @@ import { useRouter } from 'vue-router'
 
 const router = useRouter()
 const activeTab = ref('storage');
+const tableData = ref([
+    {date: '11', productName: 'name',state: 1,duration: '1415', orderNum: '1112'},
+    {date: '11', productName: 'name',state: 2,duration: '14312', orderNum: '1112'},
+])
+
 const createNew = function() {
     router.push('/newShipment')
 }

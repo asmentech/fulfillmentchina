@@ -19,12 +19,12 @@
             <el-table :data="tableData">
                 <el-table-column prop="date" label="Date" />
                 <el-table-column prop="productName" label="Product Name" />
-                <el-table-column prop="statue" label="Statue">
+                <el-table-column prop="state" label="State">
                     <template #default="item">
-                        <el-tag v-if="item.row.statue == 1" type="warning" round>In Transit</el-tag>
-                        <el-tag v-if="item.row.statue == 2" type="success" round>Paid</el-tag>
-                        <el-tag v-if="item.row.statue == 3" type="danger" round>Pending</el-tag>
-                        <el-tag v-if="item.row.statue == 4" color="#CFDDFF" style="color: #2A57CA" round>Invoiced</el-tag>
+                        <el-tag v-if="item.row.state == 1" type="warning" round>In Transit</el-tag>
+                        <el-tag v-if="item.row.state == 2" type="success" round>Paid</el-tag>
+                        <el-tag v-if="item.row.state == 3" type="danger" round>Pending</el-tag>
+                        <el-tag v-if="item.row.state == 4" color="#CFDDFF" style="color: #2A57CA" round>Invoiced</el-tag>
                     </template>
                 </el-table-column>
                 <el-table-column prop="deliverAddress" label="Deliver Address" />
@@ -48,10 +48,10 @@ import { useRouter } from 'vue-router'
 const router = useRouter()
 
 const tableData = ref([
-    {date: '11', productName: 'name',statue: 1,deliverAddress: 'address', orderNum: '1112'},
-    {date: '11', productName: 'name',statue: 2,deliverAddress: 'address', orderNum: '1112'},
-    {date: '11', productName: 'name',statue: 3,deliverAddress: 'address', orderNum: '1112'},
-    {date: '11', productName: 'name',statue: 4,deliverAddress: 'address', orderNum: '1112'},
+    {date: '11', productName: 'name',state: 1,deliverAddress: 'address', orderNum: '1112'},
+    {date: '11', productName: 'name',state: 2,deliverAddress: 'address', orderNum: '1112'},
+    {date: '11', productName: 'name',state: 3,deliverAddress: 'address', orderNum: '1112'},
+    {date: '11', productName: 'name',state: 4,deliverAddress: 'address', orderNum: '1112'},
 ])
 const createNew = function() {
     router.push('/newShipment')

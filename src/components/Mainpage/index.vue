@@ -91,7 +91,6 @@
                 <el-row justify="space-evenly">
                     <el-col :span="7" class="we-box">
                         <div class="we-text1" style="color: #FFFFFF">
-                            <el-image src=" /wepic1.png" class="we-pic"></el-image>
                             WE MANAGE
                         </div>
                         <div class="we-text15" style="margin: 22px 15% 0 15%;color: #FFFFFF">Fulfillment China guides your carton's journey to Amazon.</div>
@@ -100,8 +99,7 @@
                             we provide you with 7501 entry summary extracts.
                         </div>
                     </el-col>
-                    <el-col :span="7" class="we-box" style="background: #FFBE34;">
-                        <el-image src=" /wepic2.png" class="we-pic" style="left: 25%"></el-image>
+                    <el-col :span="7" class="we-box" style="background-image: url('/wepic2.png');height: 601px">
                         <div class="we-text1">WE SIMPLIFY</div>
                         <div class="we-text15" style="margin: 22px 15% 0 15%;">Our software serves as your essential supply chain management tool.</div>
                         <div class="we-text2" style="margin-top: 30px">Gain comprehensive stock level visibility, restock easily 
@@ -444,29 +442,40 @@
                     </div>
                     <div style="padding: 8px 0px 8px 14px;font-weight: 500;margin-top: 19px"> Enter your carton details below</div>
                     <div class="carton-calc" style="display: flex;padding: 8px 0 8px 14px;">
-                        <div style="margin-left: 68px">Carton length</div>
-                        <div style="margin-left: 95px">Carton width</div>
-                        <div style="margin-left: 95px">Carton height</div>
-                        <div style="margin-left: 78px">Carton weight</div>
-                        <div style="margin-left: 70px">Number of cartons</div>
-                        <div style="margin-left: 40px">Select FBA warehouse</div>
-                        <div style="margin-left: 35px">From China direct to Amazon US</div>
-                    </div>
-                    <div style="display: flex;padding: 8px 0 8px 14px;font-weight: 500">
-                        <span style="margin-top: 18px">FC1</span>
-                        <el-input style="width: 108px;height: 56px;margin-left: 25px"></el-input>
-                        <span style="margin-top: 18px;margin-left: 25px">X</span>
-                        <el-input style="width: 108px;height: 56px;margin-left: 25px"></el-input>
-                        <span style="margin-top: 18px;margin-left: 25px">X</span>
-                        <el-input style="width: 108px;height: 56px;margin-left: 25px"></el-input>
-                        <el-input style="width: 108px;height: 56px;margin-left: 50px"></el-input>
-                        <el-input style="width: 108px;height: 56px;margin-left: 50px"></el-input>
-                        <el-select size="large" style="width: 108px;height: 56px;margin-left: 50px;"></el-select>
-                        <el-button style="width: 162px;height: 56px;margin-left: 50px;font-size: 20px" color="#091242">CACULATE</el-button>
-                    </div>
-                    <div style="display: flex;padding: 8px 0 8px 14px;font-weight: 500">
-                        <el-switch v-model="lengthUnit" style="--el-switch-on-color: #FFBE34; --el-switch-off-color: #FFBE34;margin-left: 225px" active-text="in" inactive-text="cm"></el-switch>
-                        <el-switch v-model="weightUnit" style="--el-switch-on-color: #FFBE34; --el-switch-off-color: #FFBE34;margin-left: 240px" active-text="lb" inactive-text="kg"></el-switch>
+                        <div style="margin: 36px 16px 0 0;font-weight: 500;font-size: 16px">FC1</div>
+                        <el-col :span="2">
+                            <span>Carton length</span>
+                            <el-input style="width: 108px;height: 56px;"></el-input>
+                        </el-col>
+                        <div style="margin: 36px 16px 0 16px;font-weight: 500;font-size: 16px">X</div>
+                        <el-col :span="2">
+                            <span>Carton width</span>
+                            <el-input style="width: 108px;height: 56px;"></el-input>
+                            <el-switch v-model="lengthUnit" style="--el-switch-on-color: #FFBE34; --el-switch-off-color: #FFBE34" active-text="in" inactive-text="cm"></el-switch>
+                        </el-col>
+                        <div style="margin: 36px 16px 0 16px;font-weight: 500;font-size: 16px">X</div>
+                        <el-col :span="2">
+                            <span>Carton height</span>
+                            <el-input style="width: 108px;height: 56px;"></el-input>
+                        </el-col>
+                        <div style="margin: 36px 16px 0 16px"></div>
+                        <el-col :span="2">
+                            <span>Carton weight</span>
+                            <el-input style="width: 108px;height: 56px;"></el-input>
+                            <el-switch v-model="weightUnit" style="--el-switch-on-color: #FFBE34; --el-switch-off-color: #FFBE34" active-text="lb" inactive-text="kg"></el-switch>
+                        </el-col>
+                        <el-col :span="3">
+                            <span>Number of cartons</span>
+                            <el-input style="width: 108px;height: 56px;"></el-input>
+                        </el-col>
+                        <el-col :span="2">
+                            <span>Select FBA warehouse</span>
+                            <el-select style="width: 108px;height: 56px;"></el-select>
+                        </el-col>
+                        <el-col :span="4">
+                            <span>From China direct to Amazon US</span>
+                            <el-button style="width: 162px;height: 56px;font-size: 20px" color="#091242">CACULATE</el-button>
+                        </el-col>
                     </div>
                     <div style="display: flex;background: #D9D9D9;width: 550px;padding: 8px 0px 8px 14px;border-radius: 6px;margin-left: 42.5%">
                         <span style="font-size: 12px;line-height: 24px">Note: Shipping rates do not include tariffs, taxes or duties. </span>
@@ -782,14 +791,12 @@ const toLogin = function() {
         }
     }
     .we-box {
-        width: 600px;
-        // height: 370px;
-        flex-shrink: 0;
-        background: #212529;
         text-align: center;
         padding: 70px 48px 70px 48px;
         margin-top: 290px;
-        transform: translateX(0);
+        padding-top: 260px;
+        background-image: url("/wepic1.png");
+        background-size: 100% 100%;
         .we-text1 {
             color: #091242;
             font-family: Inter;
