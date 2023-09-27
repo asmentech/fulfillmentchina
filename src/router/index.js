@@ -1,4 +1,6 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
+import MobilePage from '../components/Mainpage/indexMobile.vue'
+import PCPage from '../components/Mainpage/index.vue'
 
 const routes = [
     {
@@ -121,7 +123,7 @@ const routes = [
     {
       path: '/main',
       name: "main",
-      component: () => import("../components/Mainpage/index.vue"),
+      component: window.innerWidth < 768 ? MobilePage : PCPage,
       meta: { title: 'main' }
     }
   ]

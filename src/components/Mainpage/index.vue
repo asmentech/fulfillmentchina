@@ -134,15 +134,15 @@
                         </div>
                     </el-col>
                 </el-row>
-                <el-row style="padding-top: 200px">
+                <el-row style="padding-top: 160px;margin-bottom: 100px">
                     <el-col :span="3"></el-col>
                     <el-col :span="9">
-                        <div style="background: rgb(7,20,56);border-radius: 500px;width: 75%;height: 75%;transform: translateX(0)">
-                            <el-image src=" /maleimg.png" style="border-radius: 500px;position: relative;bottom: 30%">
+                        <div style="width: 75%;height: 75%">
+                            <el-image src="/maleimg2.png">
                             </el-image>
                         </div>
                     </el-col>
-                    <el-col :span="9" style="padding: 0 0 0 40px">
+                    <el-col :span="9" style="padding: 80px 0 0 40px">
                         <div class="bestrate-title" style="line-height: 40px">Tailored for Small and </div>
                         <div class="bestrate-title">Mid-Sized Businesses</div>
                         <div class="bestrate-text">
@@ -687,8 +687,13 @@ const toLogin = function() {
 .ly-container {
   width: 100%;
   height: 100%;
+  display: flex;
+  place-items: center;
+  margin: 0 auto;
+  min-width: 768px;
 }
 .ly-footer {
+    width: 100%;
     background: #091242;
     color: #FFF;
     font-family: Inter;
@@ -863,6 +868,7 @@ const toLogin = function() {
 }
 .ly-header {
     background: #091242;
+    width: 100%;
     height: 83px;
     .title-text {
         color: rgba(244, 244, 244, 0.96);
