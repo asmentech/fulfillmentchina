@@ -86,7 +86,7 @@
                     </div>
                 </el-row>
                 <el-row justify="center">
-                    <el-image src=" /howBiz.png" style="padding-top: 82px"></el-image>
+                    <el-image src=" /howBiz.png" style="padding-top: 82px;height: 192px"></el-image>
                 </el-row>
                 <el-row justify="space-evenly">
                     <el-col :span="7" class="we-box">
@@ -99,7 +99,7 @@
                             we provide you with 7501 entry summary extracts.
                         </div>
                     </el-col>
-                    <el-col :span="7" class="we-box" style="background-image: url('/wepic2.png');height: 601px">
+                    <el-col :span="7" class="we-box" style="background-image: url('/wepic2.png')">
                         <div class="we-text1">WE SIMPLIFY</div>
                         <div class="we-text15" style="margin: 22px 15% 0 15%;">Our software serves as your essential supply chain management tool.</div>
                         <div class="we-text2" style="margin-top: 30px">Gain comprehensive stock level visibility, restock easily 
@@ -111,7 +111,7 @@
                 <el-row style="padding-top: 120px">
                     <el-col :span="3"></el-col>
                     <el-col :span="9">
-                        <el-image src=" /bestrate.png" style="margin-left: 25px"></el-image>
+                        <el-image src=" /bestrate.png" style="margin-left: 25px;height: 600px"></el-image>
                     </el-col>
                     <el-col :span="9" style="padding: 90px 0 0 40px">
                         <div class="bestrate-title">Fulfillent China Price Promise</div>
@@ -138,8 +138,7 @@
                     <el-col :span="3"></el-col>
                     <el-col :span="9">
                         <div style="width: 75%;height: 75%">
-                            <el-image src="/maleimg2.png">
-                            </el-image>
+                            <el-image src="/maleimg2.png" style="margin-left: 25px;height: 600px"></el-image>
                         </div>
                     </el-col>
                     <el-col :span="9" style="padding: 80px 0 0 40px">
@@ -158,7 +157,7 @@
                         </div>
                         <el-row justify="space-between" class="moq-list" style="margin-top: 53px">
                             <el-col :span="8" style="display: flex;">
-                                <el-image src="/svgs/moqSVG.svg" style="height: 58px"></el-image>
+                                <el-image src="/svgs/moqSVG.png" style="height: 66px"></el-image>
                                 <div style="margin: 10px 0 0 8px">NO MOQ Required</div>
                             </el-col>
                             <el-col :span="8" style="display: flex;">
@@ -175,18 +174,22 @@
                 <div class="middle-page" id="caseStudies">
                     <el-col :span="2"></el-col>
                     <el-col :span="9">
-                        <div>Welcome to Your New</div>
-                        <div>Supply Chain Partner</div>
+                        <div>
+                            <div>Welcome to Your New</div>
+                            <div>Supply Chain Partner</div>
+                        </div>
                     </el-col>
                     <el-col :span="12">
-                        <el-image src="/svgs/midlogo.svg"></el-image>
-                        <span class="middle-title"> Fulfillment China</span>
+                        <div>
+                            <el-image src="/svgs/midlogo.svg"></el-image>
+                            <span class="middle-title"> Fulfillment China</span>
+                        </div>
                     </el-col>
                 </div>
                 <el-row style="padding-top: 200px">
                     <el-col :span="2"></el-col>
                     <el-col :span="9">
-                        <el-image src=" /storage.png"></el-image>
+                        <el-image src=" /storage.png" style="height: 520px"></el-image>
                     </el-col>
                     <el-col :span="2"></el-col>
                     <el-col :span="8" style="padding-top: 80px">
@@ -224,7 +227,7 @@
                         </div>
                     </el-row>
                     <el-row justify="center">
-                        <el-image src=" /singlewarehouse.png" style="padding-top: 142px"></el-image>
+                        <el-image src=" /singlewarehouse.png" style="padding-top: 142px;height: 166px"></el-image>
                     </el-row>
                 </div>
                 <el-row style="margin-top: 180px;padding-bottom: 100px">
@@ -245,7 +248,7 @@
                         <el-button color="#FFBE34" class="login-btn" style="width: 220px;margin-top: 24px">GET STARTED</el-button>
                     </el-col>
                     <el-col :span="8" style="padding-top: 80px">
-                        <el-image src=" /savetime.png"></el-image>
+                        <el-image src=" /savetime.png" style="height: 466px;margin-left: 60px"></el-image>
                     </el-col>
                 </el-row>
                 <div>
@@ -265,7 +268,7 @@
                         </div>
                     </el-row>
                     <el-row justify="center">
-                        <el-image src=" /3pls.png" style="padding-top: 142px"></el-image>
+                        <el-image src=" /3pls.png" style="padding-top: 142px;height: 240px"></el-image>
                     </el-row>
                 </div>
                 <el-row style="margin-top: 140px">
@@ -296,13 +299,13 @@
                     </el-col>
                     <el-col :span="2"></el-col>
                     <el-col :span="8" style="padding-top: 150px">
-                        <el-image src=" /cash.png"></el-image>
+                        <el-image src=" /cash.png" style="height: 366px"></el-image>
                     </el-col>
                 </el-row>
                 <el-row style="margin-top: 140px">
                     <el-col :span="2"></el-col>
                     <el-col :span="8" style="padding-top: 40px;margin-left: 30px">
-                        <el-image src=" /computer.png"></el-image>
+                        <el-image src=" /computer.png" style="height: 466px"></el-image>
                     </el-col>
                     <el-col :span="2"></el-col>
                     <el-col :span="10" style="padding-top: 80px">
@@ -797,11 +800,12 @@ const toLogin = function() {
     }
     .we-box {
         text-align: center;
-        padding: 70px 48px 70px 48px;
+        padding: 225px 48px 30px 48px;
         margin-top: 290px;
-        padding-top: 260px;
         background-image: url("/wepic1.png");
-        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
         .we-text1 {
             color: #091242;
             font-family: Inter;

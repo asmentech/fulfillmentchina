@@ -32,6 +32,10 @@ body {
   text-align: left;
 }
 
+.el-image__inner {
+  object-fit: cover !important;
+}
+
 .el-menu-item {
   border-right-style: none;
   display: flex !important;
