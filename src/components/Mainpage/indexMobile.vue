@@ -1,7 +1,7 @@
 <template>
     <el-container class="ly-container">
         <el-header class="ly-header">
-            <div style="display: flex;align-item: center">
+            <div style="display: flex;align-items: center">
                 <el-image src=" /logo.png" style="width: 30px"></el-image>
                 <span class="title-text">Fulfillment China</span>
             </div>
@@ -30,13 +30,13 @@
                         solutions. Partner with us to secure your supply chain and fuel business
                         growth!
                 </div>
-                <el-button color="#FFBE34" class="login-btn" style="margin: 45px 0">GET STARTED</el-button>
+                <!-- <el-button color="#FFBE34" class="login-btn" style="margin: 45px 0">GET STARTED</el-button> -->
             </div>
             <div class="features" id="ourFeatures">Our Features</div>
             <div class="feature-item">
-                <el-image src="/feature1.png"></el-image>
+                <el-image src="/mobile/feature1.png" style="margin-left: 30%;margin-top: 10px"></el-image>
                 <div class="feature-one">Intelligent China Warehousing</div>
-                <div class="feature-two">#Extremely low cost, automated#</div>
+                <!-- <div class="feature-two">#Extremely low cost, automated#</div> -->
                 <div class="feature-three">We utilize robots and automation systems for 24/7 unmanned 
                     operations, greatly reducing labor costs. Real-time inventory 
                     monitoring and optimized storage workflows ensure accurate and 
@@ -44,9 +44,9 @@
                 </div>
             </div>
             <div class="feature-item">
-                <el-image src="/feature2.png"></el-image>
+                <el-image src="/mobile/feature2.png" style="margin-left: 30%;margin-top: 10px"></el-image>
                 <div class="feature-one">Intelligent Logistics & Tracking</div>
-                <div class="feature-two">#Data-driven, precise predictions#</div>
+                <!-- <div class="feature-two">#Data-driven, precise predictions#</div> -->
                 <div class="feature-three">Through deep learning and predictive analytics algorithms, 
                     our intelligent logistics systems provide accurate delivery 
                     time estimates, dynamically optimize routes, and enable 
@@ -54,9 +54,9 @@
                 </div>
             </div>
             <div class="feature-item">
-                <el-image src=" /feature3.png"></el-image>
+                <el-image src="/mobile/feature3.png" style="margin-left: 32%;margin-top: 10px"></el-image>
                 <div class="feature-one">Integrated Smart Supply Chain</div>
-                <div class="feature-two">#Zero gap connections, end-to-end visibility#</div>
+                <!-- <div class="feature-two">#Zero gap connections, end-to-end visibility#</div> -->
                 <div class="feature-three">Via our proprietary blockchain and Iot technologies, we 
                     achieve zero-gap connectivity from factory to doorstep for 
                     rapid product flow. Customers can conduct virtual testing 
@@ -64,14 +64,14 @@
                 </div>
             </div>
             <div class="features">How We Help Your Business Grow</div>
-            <div class="features-sub" style="padding: 0 8%">Fulfillment China takes care of it all. 
+            <div class="features-sub" style="padding: 0 10%">Fulfillment China takes care of it all. 
                 From preparing your product for sale to delivering it to your 
                 customers' doorsteps. Warehousing, packing, and shipping – we've got you covered!
             </div>
-            <el-image src=" /howBiz.png" style="margin-top: 36px;padding: 0 8%"></el-image>
+            <el-image src=" /howBiz.png" style="margin-top: 36px;padding: 0 10%"></el-image>
             <div class="we-box">
                 <div class="we-text1">WE MANAGE</div>
-                <div class="we-text15" style="margin-top: 22px;">Fulfillment China guides your carton's journey to Amazon.</div>
+                <!-- <div class="we-text15" style="margin-top: 22px;">Fulfillment China guides your carton's journey to Amazon.</div> -->
                 <div class="we-text2" style="margin-top: 30px;">Our software automatically updates your shipping plans with tracking IDs, 
                     while our team handles tariffs and duties payable at the port. Additionally, 
                     we provide you with 7501 entry summary extracts.
@@ -79,219 +79,186 @@
             </div>
             <div class="we-box" style="background-image: url('/wepic2.png');color: #091242">
                 <div class="we-text1">WE SIMPLIFY</div>
-                <div class="we-text15" style="margin-top: 22px;">Our software serves as your essential supply chain management tool.</div>
+                <!-- <div class="we-text15" style="margin-top: 22px;">Our software serves as your essential supply chain management tool.</div> -->
                 <div class="we-text2" style="margin-top: 30px">Gain comprehensive stock level visibility, restock easily 
                     in our warehouse, generate shipping plans with a simple click, access immediate 
                     quotes from three carriers, and save valuable time.
                 </div>
             </div>
-            <div style="padding: 0 8%">
+            <div style="padding: 0 10%">
                 <div class="bestrate-title">Fulfillent China Price Promise</div>
+                <el-image src="/mobile/bestrate.png"></el-image>
                 <div class="bestrate-text">
-                    <div>At Fulfillment China, we've revolutionized shipping cost comparisons 
-                        for Amazon sellers with our groundbreaking algorithm.</div>
-                    <div>All shipments from our warehouse are meticulously analyzed with over 1,168 data points per order, ensuring you get 
-                        the best possible price and combination for every shipment.</div>
-                    <div>With a single click, receive instant shipping quotes for your Amazon shipping plans, comparing every combination in seconds!</div>
-                    <div style="font-weight: 900;margin: 20px 0 20px 0">
-                        <div>We compare: Cubic meter (cbm) vs Kilogram rates</div>
-                        <div>· Carrier speeds: Regular service, Matson CLX, and CLX+</div>
-                        <div>· UPS/FedEx vs Trucking last-mile delivery rates</div>
-                        <div>· Combination deliveries vs truck or UPS/FedEx only</div>
-                    </div>
-                    <div>Our shipping algorithm effortlessly handles complexities like different order quantities, carton sizes, 
-                        weights, and serves over 185 different FBA warehouse locations.</div>
-                    <div>Fulfillment China is equipped with the infrastructure to fulfill any combination you need, securing 
-                        the best possible price, guaranteed!</div>
+                    <div>At Fulfillment China, our cutting-edge algorithm compares shipping costs 
+                        for Amazon sellers using over 1,168 data points per order.</div>
                 </div>
             </div>
-            <div style="padding: 0 8%">
+            <div style="padding: 0 10%">
                 <div class="bestrate-title">Tailored for Small and Mid-Sized Businesses</div>
-                <div class="bestrate-text">
-                    <div>Limited budget? Short on time to manage your own fulfillment team? Look 
-                        no further. Whether you're a thriving direct-to-consumer brand or a business 
-                        in need of a crowdfunding fulfillment partner, Fulfillment China has the solution.
-                    </div>
-                    <div style="font-size: 20px;font-weight: 500;margin-top: 30px">We Handle It All !</div>
-                    <div>From liaising with your suppliers to researching packaging, sourcing parts, 
-                        and components, our team provides in-house-level service, ensuring your 
-                        fulfillment needs are met seamlessly.
-                    </div>
+                <div class="bestrate-text" style="display: flex;align-items: center">
+                    <el-col :span="6">
+                        <el-image src="/mobile/malepic.png"></el-image>
+                    </el-col>
+                    <div style="margin-left: 20px">Limited budget? Short on time to manage your own fulfillment team? Fulfillment China is the answer.</div>
                 </div>
-                <div style="font-size: 10px;margin: 24px 0">
-                    <div>
-                        <el-image src="/svgs/moqSVG.svg"></el-image>
+                <div style="display: flex;justify-content: space-evenly;margin: 20px 0">
+                    <el-col :span="7">
+                        <el-image src="/mobile/moqSVG.png"></el-image>
                         <div>NO MOQ Required</div>
-                    </div>
-                    <div>
-                        <el-image src="/svgs/cubeSVG.svg"></el-image>
+                    </el-col>
+                    <el-col :span="7">
+                        <el-image src="/mobile/cubeSVG.svg"></el-image>
                         <div>60-day Free Warehousing</div>
-                    </div>
-                    <div>
-                        <el-image src="/svgs/coinSVG.svg"></el-image>
+                    </el-col>
+                    <el-col :span="7">
+                        <el-image src="/mobile/coinSVG.svg"></el-image>
                         <div>40% Savings On Shipping Cost</div>
-                    </div>
+                    </el-col>
                 </div>
             </div>
             <div class="middle-page" id="caseStudies">
-                <div>Welcome to Your New</div>
-                <div>Supply Chain Partner</div>
-                <div style="display: flex;align-item: center;justify-content: center;margin-top: 30px">
-                    <el-image src="/svgs/midlogo.svg" style="width: 10%"></el-image>
-                    <span class="middle-title"> Fulfillment China</span>
+                <div style="display: flex;align-item: center;justify-content: center">
+                    <div>Welcome to Your New Supply Chain Partner</div>
+                    <el-image src="/svgs/midlogo.svg" style="width: 25%"></el-image>
                 </div>
             </div>
-            <div style="padding: 0 8%">
-                <div class="bestrate-title">Store In China</div>
-                <div class="bestrate-text">
-                    <div>Storing with Fulfillment China presents numerous benefits. Besides creating 
-                        a central hub for streamlined product distribution across Amazon markets, 
-                        you enjoy substantial cost savings in storage versus US 3PL fees.</div>
-                    <div style="margin-top: 30px">By storing your cartons with Fulfillment China, you'll slash your US 
-                        storage costs by around 40%. What's more, those US receiving fees? They 
-                        disappear when you ship to us. We handle the reception for you, absolutely 
-                        free.</div>
-                    <el-button color="#FFBE34" class="login-btn" style="width: 220px;margin-top: 24px">GET STARTED</el-button>
+            <div style="padding: 0 8%;display: flex;align-items: center">
+                <el-col :span="8">
+                    <el-image src="/mobile/store.png"></el-image>
+                </el-col>
+                <div style="margin-left: 20px">
+                    <div class="bestrate-title" style="text-align: left">Store In China</div>
+                    <div class="bestrate-text">
+                        <div>Storing with Fulfillment China is cost-effective. You save on US storage costs, and we handle receiving for free.</div>
+                    </div>
                 </div>
             </div>
             <div style="padding: 0 8%">
                 <div class="features">Single Warehouse, Global Reach</div>
-                <div class="features-sub" style="line-height: 30px">Take charge of your worldwide Amazon 
-                    marketplace reach with unmatched precision and technology. Fulfillment China is your 
-                    gateway to both the US and UK markets. Centralize all your goods, gaining unmatched control for effortless global carton 
-                    distribution. Our advanced software management system empowers you, offering seamless 
-                    control over UK or US carton distribution with just a click.
+                <div class="features-sub" style="text-align: center">Maximize your Amazon reach with Fulfillment China. Access US 
+                    and UK markets easily. Centralize goods for global distribution. Our software simplifies carton distribution with a click.
                 </div>
+                <el-image src="/mobile/single.png" style="margin-top: 20px"></el-image>
             </div>
-            <div style="padding: 0 8%">
-                <div class="bestrate-title">Save Time</div>
-                <div class="bestrate-text" style="line-height: 30px">
-                    <div>Efficiently managing your supply chain can be time-consuming. A prime example 
-                        is creating shipping plans for numerous Fulfillment China. When Amazon 
-                        designates multiple FBA warehouses for each Fulfillment China in your plan, 
-                        you're then tasked with downloading and organizing FBA labels, filling 
-                        spreadsheets, and emailing your 3PL with attached labels and forms.</div>
-                    <div style="margin-top: 30px;line-height: 30px" >This process demands time and energy. Fulfillment 
-                        China is here to give you that time back. With a simple click, you can swiftly 
-                        generate shipping plans for multiple SKUs, receive competitive shipping 
-                        quotes, and transmit your FBA labels to our warehouse in under 3 seconds.</div>
+            <div style="padding: 0 8%;display: flex;align-items: center">
+                <el-col :span="8">
+                    <el-image src="/mobile/savetime.png"></el-image>
+                </el-col>
+                <div style="margin-left: 20px">
+                    <div class="bestrate-title" style="text-align: left">Save Time</div>
+                    <div class="bestrate-text">
+                        <div>Managing your supply chain can be time-consuming. We simplify this process for you.</div>
+                    </div>
                 </div>
-                <el-button color="#FFBE34" class="login-btn" style="width: 220px;margin-top: 24px">GET STARTED</el-button>
             </div>
             <div style="padding: 0 8%">
                 <div class="features">Eliminate 3PL's</div>
-                <div class="features-sub" style="line-height: 30px">Fulfillment China eradicates the 
-                    necessity for US-based 3PLs, shipping your products directly into Amazon. What's 
-                    more, bid farewell to 3PL receiving fees, SPD shipping 
-                    charges from Amazon, costly monthly storage fees, and high carton preparation 
-                    costs.
+                <div class="features-sub">
+                    Fulfillment China cuts out the need for US 3PLs. We ship directly to Amazon, 
+                    saving you fees and costs.
                 </div>
+                <el-image src="/mobile/3pls.png" style="margin-left: 6%;margin-top: 20px"></el-image>
             </div>
-            <div style="padding: 0 8%">
-                <div class="bestrate-title">Maximize your savings</div>
-                <div class="bestrate-text">
-                    <div>Our supply chain operates on autopilot, streamlining the process. 
-                        Traditionally, we manufacture goods in China and engage a freight forwarder 
-                        to ship the entire batch to the US, followed by storing them in a 3PL 
-                        facility.</div>
-                    <div style="margin-top: 30px">However, this approach demands substantial 
-                        upfront investments to transport goods to the US and incurs extra SPD 
-                        delivery expenses from the 3PL to Amazon. This traditional method often 
-                        results in significant financial leakage within your supply chain.</div>
-                    <div style="margin-top: 30px">
-                        Enter Fulfillment China – the solution that keeps more money in your 
-                        pocket. How? We employ regular DIRECT TO AMAZON shipments each week, 
-                        reducing your initial cash outlay, bolstering your bank account, and 
-                        eliminating additional SPD shipping costs.
-                    </div>
-                    <div style="margin-top: 30px">
-                        With Fulfillment China, the necessity to bulk ship ALL your goods to the 
-                        US in a single shipment becomes obsolete.
+            <div style="padding: 0 8%;display: flex;align-items: center">
+                <div style="margin-right: 20px">
+                    <div class="bestrate-title" style="text-align: left">Maximize your savings</div>
+                    <div class="bestrate-text">
+                        <div>Our supply chain runs smoothly. We make goods in China and ship them to the US, where they're stored in a 3PL facility.</div>
                     </div>
                 </div>
-                <el-button color="#FFBE34" class="login-btn" style="width: 220px;margin-top: 24px">GET STARTED</el-button>
+                <el-col :span="8">
+                    <el-image src="/mobile/cash.png"></el-image>
+                </el-col>
             </div>
-            <div style="padding: 0 8%">
-                <div class="bestrate-title">Streamlined Dashboard Control</div>
-                <div class="bestrate-text">
-                    <div>Managing your storage, creating shipping plans, sending FBA labels to your 
-                        3PL for SPD shipping and stock control can be very complex.</div>
-                    <div style="margin-top: 30px">The SKUdrop dashboard simplifies the way we manage 
-                        the above processes. In one glance, you can instantly see what goods you’re 
-                        storing, how many cubic meters you have at our warehouse, what’s cartons are 
-                        incoming, what’s in transit and more.</div>
+            <div style="padding: 0 8%;display: flex;align-items: center">
+                <div style="margin-right: 20px">
+                    <div class="bestrate-title" style="text-align: left">Streamlined Dashboard Control</div>
+                    <div class="bestrate-text">
+                        <div>The Fulfillment China dashboard simplifies everything. At a glance, you see what goods are stored, cubic meters in our warehouse, 
+                            incoming cartons, items in transit, and more.</div>
+                    </div>
                 </div>
-                <el-button color="#FFBE34" class="login-btn" style="width: 220px;margin-top: 24px">GET STARTED</el-button>
+                <el-col :span="8">
+                    <el-image src="/mobile/computer.png"></el-image>
+                </el-col>
             </div>
             <div class="guar-page" style="margin-top: 60px" id="ourFee">
-                <div style="font-size: 22px;font-weight: 500">Our supply chain money saving</div>
-                <div style="font-size: 48px;font-weight: 800">GUARANTEE</div>
-                <div>We're confident that Fulfillment China will significantly reduce your total supply chain costs. We wholeheartedly stand behind this assurance.</div>
-                <div style="font-size: 18px;font-weight: 700;margin-top: 24px">We stand by that statement.</div>
-                <div>By opting for Fulfillment China, you eliminate expenses 
-                    like bonds, container drop-off fees at your supplier's factory, container delivery 
-                    charges from port to 3PL, 3PL receiving, storage and prep fees, as well as Amazon 
-                    SPD shipping costs. All our shipping quotes offer DOOR-TO-DOOR coverage, coupled 
-                    with the most affordable storage solutions globally.
-                </div>
+                <div style="font-size: 12px;font-weight: 500">Our supply chain money saving</div>
+                <div style="font-size: 28px;font-weight: 700">GUARANTEE</div>
             </div>
-            <div style="padding: 0 8%">
+            <div style="padding: 0 10%">
                 <div class="features">Fulfillment China saves you money</div>
-                <el-image src=" /casestudy1.png"></el-image>
                 <div class="vs-title">
                     CASE STUDY #1 <span style="font-weight: 400">- Fulfillment China vs Full Container Load (FCL)</span>
                 </div>
-                <div class="vs-price">$14,972</div>
-                <div class="bestrate-text">Saved in hard supply chain costs by using Fulfillment China</div>
-                <div class="vs-price">31.9%</div>
-                <div class="bestrate-text">Reduction in storage fees by storing at Fulfillment China</div>
-                <div class="vs-price">26%</div>
-                <div class="bestrate-text">Reduction in prep fees by using Fulfillment China</div>
-                <el-button size="large" color="#FFBE34" class="login-btn" style="width: 220px;margin-top: 20px">VIEW CASE STUDY</el-button>
+                <div class="vs-item">
+                    <el-col :span="6" class="vs-price">$14,972</el-col>
+                    <div class="bestrate-text">Saved in hard supply chain costs by using Fulfillment China</div>
+                </div>
+                <div class="vs-item">
+                    <el-col :span="6" class="vs-price">31.9%</el-col>
+                    <div class="bestrate-text">Reduction in storage fees by storing at Fulfillment China</div>
+                </div>
+                <div class="vs-item">
+                    <el-col :span="6" class="vs-price">26%</el-col>
+                    <div class="bestrate-text">Reduction in prep fees by using Fulfillment China</div>
+                </div>
             </div>
-            <div style="padding: 0 8%;margin-top: 30px">
-                <el-image src=" /casestudy2.png"></el-image>
+            <div style="padding: 0 10%;margin-top: 30px">
                 <div class="vs-title">
                     CASE STUDY #2 <span style="font-weight: 400">- Fulfillment China vs Less Container Load (FCL)</span>
                 </div>
-                <div class="vs-price">$2,474</div>
-                <div class="bestrate-text">Saved in hard supply chain costs by using Fulfillment China</div>
-                <div class="vs-price">31.9%</div>
-                <div class="bestrate-text">Reduction in storage fees by storing at Fulfillment China</div>
-                <div class="vs-price">42.9%</div>
-                <div class="bestrate-text">Reduction in prep fees by using Fulfillment China</div>
-                <el-button size="large" color="#FFBE34" class="login-btn" style="width: 220px;margin-top: 20px">VIEW CASE STUDY</el-button>
+                <div class="vs-item">
+                    <el-col :span="6" class="vs-price">$2,474</el-col>
+                    <div class="bestrate-text">Saved in hard supply chain costs by using Fulfillment China</div>
+                </div>
+                <div class="vs-item">
+                    <el-col :span="6" class="vs-price">31.9%</el-col>
+                    <div class="bestrate-text">Reduction in storage fees by storing at Fulfillment China</div>
+                </div>
+                <div class="vs-item">
+                    <el-col :span="6" class="vs-price">42.9%</el-col>
+                    <div class="bestrate-text">Reduction in prep fees by using Fulfillment China</div>
+                </div>
             </div>
-            <div style="padding: 0 8%">
+            <div style="padding: 0 5%">
                 <div class="features">Simple pricing for everyone</div>
-                <div class="free-title">Receiving</div>
-                <div class="free-logo">FREE</div>
-                <div class="bestrate-text" style="font-size: 24px;font-weight: 500;line-height: 32.5px">We don't charge anything to receive your cartons</div>
-                <el-divider></el-divider>
-                <div class="free-title">Access</div>
-                <div class="free-logo">FREE</div>
-                <div class="bestrate-text" style="font-size: 24px;font-weight: 500;line-height: 32.5px">Our software is designed to save you time, and give you full control like never before</div>
-                <el-divider></el-divider>
-                <div class="free-title">Carton Prep</div>
-                <div class="free-logo">FREE</div>
-                <div class="bestrate-text" style="font-size: 24px;font-weight: 500;line-height: 32.5px">Per carton for picking, prepping and container loading</div>
+                <div style="display: flex;justify-content: space-evenly;text-align: center">
+                    <el-col :span="7">
+                        <div class="free-title">Receiving</div>
+                        <div class="free-logo">FREE</div>
+                        <div class="bestrate-text" style="font-size: 6px;">
+                            We don't charge anything to receive your cartons
+                        </div>
+                    </el-col>
+                    <el-col :span="7">
+                        <div class="free-title">Access</div>
+                        <div class="free-logo">FREE</div>
+                        <div class="bestrate-text" style="font-size: 6px;">
+                            Our software is designed to save you time, and give you full control like never before
+                        </div>
+                    </el-col>
+                    <el-col :span="7">
+                        <div class="free-title">Carton Prep</div>
+                        <div class="free-logo">FREE</div>
+                        <div class="bestrate-text" style="font-size: 6px;">
+                            Per carton for picking, prepping and container loading
+                        </div>
+                    </el-col>
+                </div>
             </div>
-            <div style="padding: 0 8%">
+            <div style="padding: 0 10%">
                 <div class="features">Test Drive Our Rates...</div>
-                <div class="features-sub">Remember, the Fulfillment China model works best with regular weekly shipments</div>
             </div>
-            <div style="padding: 0 8%">
-                <div style="display: flex;background: #D9D9D9;padding: 1%;border-radius: 6px">
-                    <span style="font-weight: 500">Select your Market :</span>
-                    <el-image src=" /usflag.png" style="height: 15px;width: 30px;margin: auto"></el-image>
-                    <el-radio-group fill="#091242" v-model="chosenCountry" size="small">
+            <div style="padding: 0 10%">
+                <div style="display: flex;align-items: center;background: #D9D9D9;padding: 2%;border-radius: 6px">
+                    <span>Select your Market :</span>
+                    <el-radio-group fill="#091242" v-model="chosenCountry" size="small" style="margin-left: 20px">
                         <el-radio-button label="US" />
                         <el-radio-button label="UK" />
                     </el-radio-group>
-                    <el-image src=" /ukflag.png" style="height: 15px;width: 30px;margin: auto"></el-image>
                 </div>
-                <div style="margin: 20px 0"> Enter your carton details below</div>
-                <el-form label-position="right">
+                <el-form label-position="left" label-width="140" style="margin-top: 20px">
                     <el-form-item label="Carton length">
                         <el-input></el-input>
                     </el-form-item>
@@ -312,23 +279,15 @@
                     <el-form-item label="Number of cartons">
                         <el-input></el-input>
                     </el-form-item>
-                    <el-form-item label="Select FBA warehouse">
+                    <el-form-item label="FBA warehouse">
                         <el-select></el-select>
                     </el-form-item>
                 </el-form>
-                <div>From China direct to Amazon US</div>
-                <el-button style="width: 162px;height: 40px;font-size: 20px" color="#091242">CACULATE</el-button>
-                <div style="background: #D9D9D9;border-radius: 6px;padding: 3%;margin-top: 30px">
-                    Note: Shipping rates do not include tariffs, taxes or duties. We do not do DDP shipping
-                </div>
+                <el-button style="width: 100%;height: 40px;font-size: 20px" color="#091242">CACULATE</el-button>
             </div>
-            <div style="padding: 0 8%">
+            <div style="padding: 0 10%">
                 <div class="features">
                     Freight Forwarders vs Fulfillment China
-                </div>
-                <div class="features-sub">
-                    Fulfillment China offers a superior supply chain solution compared to traditional freight forwarders. Our platform is designed 
-                    by sellers, for sellers, so we understand your needs and have incorporated them into every aspect of our service.
                 </div>
             </div>
             <div style="padding: 0 5%">
@@ -503,12 +462,11 @@ const toLogin = function() {
 .ly-container {
   width: 100%;
   height: 100%;
-  display: flex;
-  place-items: center;
   max-width: 768px;
-  text-align: center;
   font-family: Inter;
-  font-weight: 400;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: normal;
 }
 .ly-content {
     width: 100%;
@@ -516,12 +474,12 @@ const toLogin = function() {
     .first-page {
         background-image: url(" /ffChina.png");
         background-size: 100% 100%;
-        padding: 0 8%;
+        padding: 0 5% 30px 5%;
         .save-you {
             color: #ffbf34;
             text-align: center;
             font-family: Inter;
-            font-size: 24px;
+            font-size: 16px;
             font-weight: 900;
             padding-top: 60px;
         }
@@ -530,71 +488,60 @@ const toLogin = function() {
             text-align: center;
             font-family: Inter;
             padding-top: 10px;
+            font-size: 13px;
         }
     }
     .features {
         color: #4D4D4D;
         text-align: center;
         font-family: Inter;
-        font-size: 32px;
-        font-weight: 500;
-        margin: 40px 0;
+        font-size: 18px;
+        font-weight: 600;
+        margin: 40px 0 20px 0;
     }
     .feature-item {
-        padding: 0 8%;
+        padding: 0 7%;
         .feature-one {
             color: #000;
-            font-family: Inter;
-            font-size: 24px;
-            font-style: normal;
-            font-weight: 500;
+            font-size: 18px;
+            font-weight: 600;
+            margin: 10px 0;
         }
         .feature-two {
             color: #000;
-            font-family: Inter;
-            font-size: 20px;
-            font-style: italic;
+            font-size: 16px;
+            font-weight: 500;
         }
         .feature-three {
             color: #000;
-            font-family: Inter;
-            font-size: 15px;
-            font-style: normal;
-            margin-top: 24px
         }
     }
     .we-box {
         text-align: center;
-        padding-top: 200px;
-        padding-bottom: 45px;
-        margin: 25px 5% 0 5%;
+        padding-top: 140px;
+        padding-bottom: 25px;
+        margin: 40px 5% 0 5%;
         background-image: url("/wepic1.png");
         background-size: 100% 100%;
         background-repeat: no-repeat;
         color: #FFFFFF;
         .we-text1 {
             font-family: Inter;
-            font-size: 32px;
-            font-weight: 500;
+            font-size: 16px;
+            font-weight: 600;
         }
         .we-text2 {
             font-family: Inter;
-            font-size: 14px;
-            font-weight: 400;
             margin: 0 5%;
-        }
-        .we-text15 {
-            font-family: Inter;
-            font-size: 14px;
-            font-weight: 900;
         }
     }
     .bestrate-title {
         color: #1C1F35;
         font-family: Inter;
-        font-size: 36px;
-        margin: 36px 0;
-        font-weight: 500;
+        font-size: 18px;
+        margin: 24px 0;
+        font-weight: 600;
+        text-align: center;
     }
     .bestrate-text {
         color: #1C1F35;
@@ -603,22 +550,16 @@ const toLogin = function() {
     .middle-page {
         background-image: url(" /midpic.png");
         background-size: 100% 100%;
-        padding: 10%;
+        padding: 10% 15%;
         color: #FFF;
-        font-family: Inter;
-        font-size: 24px;
+        font-size: 16px;
         font-weight: 600;
-        .middle-title {
-            color: #F4F4F4;
-            font-family: Inter;
-            font-size: 18px;
-            font-weight: 700;
-        }
     }
     .guar-page {
         background-image: url(" /guarantee.png");
+        text-align: center;
         background-size: 100% 100%;
-        padding: 10%;
+        padding: 8%;
         color: #FFF;
         font-size: 15px;
         font-weight: 400;
@@ -628,7 +569,7 @@ const toLogin = function() {
     width: 100%;
     background: #091242;
     color: #FFF;
-    padding: 64px 10% 0 8%;
+    padding: 64px 10% 0 10%;
 }
 .nav-item {
     display: flex;
@@ -676,28 +617,30 @@ const toLogin = function() {
     .vs-title {
         color: #091242;
         font-family: Inter;
-        font-size: 24px;
+        font-size: 13px;
         font-weight: 700;
     }
     .vs-price {
         color: #091242;
         font-family: Inter;
-        font-size: 40px;
+        font-size: 16px;
         font-weight: 500;
-        background: #D9D9D9;
-        border-radius: 12px;
+        background: #FFBE34;
         text-align: center;
+        padding: 5px;
+        margin-right: 15px;
+        width: 100%;
     }
     .free-title {
         color: #091242;
         font-family: Inter;
-        font-size: 24px;
+        font-size: 9px;
         font-weight: 700;
     }
     .free-logo {
         color: #FFBE34;
         font-family: Inter;
-        font-size: 60px;
+        font-size: 24px;
         font-weight: 900;
     }
     .carton-calc {
@@ -706,7 +649,6 @@ const toLogin = function() {
         font-family: Inter;
         font-size: 12px;
         font-weight: 400;
-        line-height: 19.5px; /* 162.5% */
     }
 
 .copyright {
@@ -714,5 +656,10 @@ const toLogin = function() {
     color: #BBBEC7;
     font-family: Inter;
     padding: 21px 0 21px 0;
+}
+.vs-item {
+    display: flex;
+    align-items: center;
+    margin: 10px 0
 }
 </style>
