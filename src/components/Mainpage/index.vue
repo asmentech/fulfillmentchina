@@ -433,7 +433,7 @@
                         </div>
                     </el-row>
                 </div>
-                <div style="margin: 60px 0% 0 20%">
+                <div style="margin: 60px 0 0 16%">
                     <div style="display: flex;background: #D9D9D9;width: 400px;padding: 8px 0px 8px 14px;border-radius: 6px">
                         <span style="font-weight: 500">Select your Market :</span>
                         <el-image src=" /usflag.png" style="height: 22.5px;width: 40px;margin: auto"></el-image>
@@ -472,8 +472,8 @@
                             <el-input style="width: 108px;height: 56px;"></el-input>
                         </el-col>
                         <el-col :span="2">
-                            <span>Select FBA warehouse</span>
-                            <el-select style="width: 108px;height: 56px;"></el-select>
+                            <span>FBA warehouse</span>
+                            <el-select style="height: 56px;"></el-select>
                         </el-col>
                         <el-col :span="4">
                             <span>From China direct to Amazon US</span>
